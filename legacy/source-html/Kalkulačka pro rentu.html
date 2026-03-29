@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="" data-ws-project="1d3e2b47-51da-4c98-802f-121e1e17c30b" data-ws-last-published="2026-03-23T18:27:01.356Z"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://kovacsebastian.com/_image/w_144,q_100/assets/frfavicon_jlFFLMT_V1Mk6uXTW1p2Q.png"><link rel="modulepreload" href="https://kovacsebastian.com/assets/entry.client-DAnfYBe0.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/chunk-LFPYN7LY-KO6my5NK.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/root-CKNBTVqL.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/_index-D4jCT0wn.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/components-BIsCsZWf.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/_financne-kalkulacky_._kalkulacka-pro-rentu_._index-D4xnT5wP.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/index-BVj1Hbq_.js"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Sebastián Kováč","url":"https://kovacsebastian.com"}</script><link rel="stylesheet" href="Kalkula%C4%8Dka%20pro%20rentu_files/index-PYqb4Xo0.css"><meta property="og:url" content="https://kovacsebastian.com/financne-kalkulacky/kalkulacka-pro-rentu"><meta property="og:title" content="Kalkulačka pro rentu"><meta property="og:type" content="website"><meta property="og:site_name" content="Sebastián Kováč"><meta name="robots" content="noindex, nofollow"><meta property="twitter:card" content="summary_large_image"><title>Kalkulačka pro rentu</title></head><body class="w-element" data-new-gr-c-s-check-loaded="8.936.0" data-gr-ext-installed=""><div style="display:contents"><div style="display:contents"><div class="w-html-embed"><nav class="nav-embed">
+    <a href="https://kovacsebastian.com/" class="nav-logo" aria-label="Domů">
+      <img src="Kalkula%C4%8Dka%20pro%20rentu_files/transpfavicon.png" alt="Sebastián Kováč">
+    </a>
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="https://kovacsebastian.com/" class="nav-link">O Mně</a></li>
+        <li class="nav-dropdown-wrap">
+          <span class="nav-link nav-trigger active" data-link-path="/financne-kalkulacky" aria-haspopup="true">Finanční Kalkulačky</span>
+          <div class="nav-dropdown">
+            <a href="https://kovacsebastian.com/financne-kalkulacky/investicna-kalkulacka" class="nav-dropdown-link">Kalkulačka Investic</a>
+            <a href="https://kovacsebastian.com/financne-kalkulacky/kolik-investovat-mesicne" class="nav-dropdown-link">Měsíční Investice pro Cíl</a>
+            <a href="https://kovacsebastian.com/financne-kalkulacky/kalkulacka-pro-rentu" class="nav-dropdown-link">Renta</a>
+            <a href="https://kovacsebastian.com/financne-kalkulacky/kalkulacka-inflace" class="nav-dropdown-link">Kalkulačka Inflace</a>
+          </div>
+        </li>
+        <li><a href="https://kovacsebastian.com/financni-diagnostika" class="nav-link">Finanční Diagnostika</a></li>
+        <li class="nav-dropdown-wrap">
+          <span class="nav-link nav-trigger" data-link-path="/produkty" aria-haspopup="true">Produkty</span>
+          <div class="nav-dropdown">
+            <a href="https://kovacsebastian.com/produkty/investice" class="nav-dropdown-link">Investice</a>
+            <a href="https://kovacsebastian.com/produkty/penzijni-sporeni" class="nav-dropdown-link">Penzijní Spoření</a>
+            <a href="https://kovacsebastian.com/produkty/uvery" class="nav-dropdown-link">Úvěry</a>
+            <a href="https://kovacsebastian.com/produkty/pojisteni" class="nav-dropdown-link">Pojištění</a>
+          </div>
+        </li>
+        <li><a href="https://kovacsebastian.com/zamestnanecke-benefity" class="nav-link">Zaměstnanecké Benefity</a></li>
+        <li><a href="https://kovacsebastian.com/investovani-do-nemovitosti" class="nav-link">Investování do Nemovitostí</a></li>
+        <li><a href="https://kovacsebastian.com/automatizace-firemnich-procesu" class="nav-link">Automatizace Firemních Procesů</a></li>
+        <li><a href="https://kovacsebastian.com/likvidace-pojistnych-udalosti" class="nav-link">Likvidace Pojistných Událostí</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <style>
+    .nav-embed {
+      background: #faf9f7;
+      border-bottom: 1px solid #e8e4df;
+      padding: 0 clamp(16px, 3vw, 40px);
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+      z-index: 1000;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      box-sizing: border-box;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      padding-left: clamp(28px, 4vw, 52px);
+      box-sizing: border-box;
+    }
+    @media (min-width: 1470px) {
+      .nav-inner { max-width: 1920px; }
+    }
+    .nav-logo {
+      position: absolute;
+      left: clamp(16px, 3vw, 40px);
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      line-height: 0;
+      flex-shrink: 0;
+    }
+    .nav-logo img {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+    .nav-links {
+      display: grid;
+      grid-template-columns: repeat(8, auto);
+      grid-template-rows: 1fr;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(16px, 2.2vw, 40px);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      white-space: nowrap;
+    }
+    .nav-links li { white-space: nowrap; justify-self: center; }
+    .nav-link {
+      font-size: 15px;
+      font-weight: 500;
+      color: transparent;
+      background: linear-gradient(to right, #7d6b5a 50%, #000 50%);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: background-position 0.3s ease;
+      display: inline-block;
+      position: relative;
+    }
+    .nav-link:hover { background-position: 0 0; }
+    .nav-link.active { background-position: 0 0; }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #7d6b5a;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after { width: 100%; }
+    .nav-trigger {
+      cursor: pointer;
+    }
+    .nav-dropdown-wrap {
+      position: relative;
+    }
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%) translateY(-6px);
+      min-width: 200px;
+      padding: 10px 0;
+      background: #fff;
+      border: 1px solid #e8e4df;
+      border-radius: 6px;
+      box-shadow: 0 8px 32px rgba(61,44,41,0.08);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+      z-index: 1001;
+    }
+    .nav-dropdown-wrap:hover .nav-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+    .nav-dropdown-link {
+      display: block;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: background 0.2s ease, color 0.2s ease;
+      white-space: nowrap;
+    }
+    .nav-dropdown-link:hover {
+      background: #f8f6f3;
+      color: #7d6b5a;
+    }
+    /* Wrapped state: two lines, 4 links per line, fixed height, bigger logo */
+    @media (max-width: 1180px) {
+      .nav-embed {
+        height: 100px;
+        align-items: center;
+      }
+      .nav-logo img {
+        height: 36px;
+      }
+      .nav-links {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+        align-content: center;
+        column-gap: 24px;
+        row-gap: 10px;
+      }
+      .nav-links li {
+        justify-self: center;
+      }
+      .nav-link { font-size: 14px; }
+    }
+  </style>
+  <script>
+    (function() {
+      var path = window.location.pathname.replace(/\/$/, '') || '/';
+      var nav = document.querySelector('.nav-embed');
+      if (!nav) return;
+      var links = nav.querySelectorAll('.nav-link');
+      links.forEach(function(link) {
+        link.classList.remove('active');
+        var href = link.getAttribute('href') || link.getAttribute('data-link-path') || '';
+        var linkPath = href.replace(/\/$/, '') || '/';
+        if (path === linkPath) {
+          link.classList.add('active');
+          return;
+        }
+        if (linkPath === '/financne-kalkulacky' && (path === '/financne-kalkulacky' || path.indexOf('/financne-kalkulacky/') === 0 || path === '/target-investment-calc' || path === '/pension-calc')) {
+          link.classList.add('active');
+        }
+        if (linkPath === '/produkty' && (path === '/produkty' || path.indexOf('/produkty/') === 0)) {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
+  </div></div></div><div class="w-html-embed"><style>.pc-card:hover{box-shadow:0 4px 20px rgba(61,44,41,0.08)}.pc-slider{-webkit-appearance:none;appearance:none;width:100%;height:24px;background:transparent;cursor:pointer}.pc-slider:focus{outline:0}.pc-slider::-webkit-slider-runnable-track{height:8px;background:linear-gradient(to right,var(--slider-fill-color,#a89f94) 0,var(--slider-fill-color,#a89f94) var(--slider-progress,0%),#e8e4df var(--slider-progress,0%),#e8e4df 100%);border-radius:4px;transition:background .15s ease}.pc-slider:hover::-webkit-slider-runnable-track{background:linear-gradient(to right,var(--slider-fill-color,#a89f94) 0,var(--slider-fill-color,#a89f94) var(--slider-progress,0%),#dfdbd5 var(--slider-progress,0%),#dfdbd5 100%)}.pc-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;margin-top:-6px;background:#5c4a3d;border-radius:50%;box-shadow:0 1px 3px rgba(61,44,41,0.2);cursor:grab;transition:transform .15s ease,box-shadow .2s ease}.pc-slider::-webkit-slider-thumb:hover{transform:scale(1.08);box-shadow:0 2px 8px rgba(61,44,41,0.25)}.pc-slider::-webkit-slider-thumb:active{cursor:grabbing;transform:scale(1.02)}.pc-slider::-moz-range-track{height:8px;background:linear-gradient(to right,var(--slider-fill-color,#a89f94) 0,var(--slider-fill-color,#a89f94) var(--slider-progress,0%),#e8e4df var(--slider-progress,0%),#e8e4df 100%);border-radius:4px;transition:background .15s ease}.pc-slider:hover::-moz-range-track{background:linear-gradient(to right,var(--slider-fill-color,#a89f94) 0,var(--slider-fill-color,#a89f94) var(--slider-progress,0%),#dfdbd5 var(--slider-progress,0%),#dfdbd5 100%)}.pc-slider::-moz-range-thumb{width:20px;height:20px;background:#5c4a3d;border:0;border-radius:50%;box-shadow:0 1px 3px rgba(61,44,41,0.2);cursor:grab;transition:transform .15s ease,box-shadow .2s ease}.pc-slider::-moz-range-thumb:hover{transform:scale(1.08);box-shadow:0 2px 8px rgba(61,44,41,0.25)}.pc-slider::-moz-range-thumb:active{cursor:grabbing;transform:scale(1.02)}@keyframes pc-fadein{from{opacity:0}to{opacity:1}}.pc-infl-toggle{font-family:"Times New Roman",Times,serif;font-size:14px;font-weight:500;color:#3d2c29;background:#faf9f7;border:1px solid #e8e4df;border-radius:6px;padding:10px 20px;cursor:pointer;transition:background .2s ease,border-color .2s ease}.pc-infl-toggle:hover{background:#f0ede8;border-color:#d4cfc8}.pc-divider{width:1px;background:#e8e4df;align-self:stretch;margin:0 4px}</style>
+<div style="max-width:1100px;margin:0 auto;padding:40px 24px;font-family:&quot;Georgia&quot;,&quot;Times New Roman&quot;,serif;line-height:1.6;letter-spacing:.02em">
+<div style="display:flex;gap:32px">
+<div class="pc-card" style="flex:2;padding:40px 36px;border-radius:4px;background:#faf9f7;border:1px solid #e8e4df;box-shadow:0 2px 12px rgba(61,44,41,0.04);transition:box-shadow .25s ease">
+<div style="font-family:&quot;Georgia&quot;,serif;font-size:22px;font-weight:400;margin-bottom:8px;color:#3d2c29;letter-spacing:.03em">
+Kalkulačka penze
+</div>
+<div style="font-size:12px;color:#a89f94;margin-bottom:32px">
+Kolik měsíčně spořit, aby vám dúchod vydržel?
+</div>
+<div style="display:grid;grid-template-columns:1fr 1px 1fr;gap:0 28px;margin-bottom:0">
+<div>
+<div style="font-family:system-ui,sans-serif;font-size:11px;font-weight:600;color:#a89f94;text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px">
+Fáze spoření
+</div>
+<div style="margin-bottom:28px">
+<div style="font-family:system-ui,sans-serif;font-size:13px;font-weight:500;margin-bottom:8px;color:#2d2d2d">
+VÃ½nos při spoření
+</div>
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#8e8e8e;margin-bottom:6px">
+<span>1 %</span><span>20 %</span>
+</div>
+<input id="pc-sav-rate" class="pc-slider" type="range" min="1" max="20" step="0.1" value="8" style="--slider-progress: 36.84210526315789%; --slider-fill-color: rgb(129,117,109);">
+<div style="display:flex;justify-content:flex-end;margin-top:8px">
+<div style="padding:6px 14px;border-radius:4px;border:1px solid #e8e4df;font-size:13px;background:#fff">
+<input id="pc-sav-rate-d" type="text" inputmode="decimal" style="width:44px;border:0;background:transparent;font-size:13px;outline:0;color:#3d2c29" value="8.0">
+<span style="color:#6b6b6b"> %</span>
+</div>
+</div>
+</div>
+<div style="margin-bottom:28px">
+<div style="font-family:system-ui,sans-serif;font-size:13px;font-weight:500;margin-bottom:8px;color:#2d2d2d">
+Doba spoření
+</div>
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#8e8e8e;margin-bottom:6px">
+<span>1 rok</span><span>45 let</span>
+</div>
+<input id="pc-sav-years" class="pc-slider" type="range" min="1" max="45" step="1" value="30" style="--slider-progress: 65.9090909090909%; --slider-fill-color: rgb(97,83,77);">
+<div style="display:flex;justify-content:flex-end;margin-top:8px">
+<div style="padding:6px 14px;border-radius:4px;border:1px solid #e8e4df;font-size:13px;background:#fff">
+<input id="pc-sav-years-d" type="text" inputmode="numeric" style="width:44px;border:0;background:transparent;font-size:13px;outline:0;color:#3d2c29" value="30">
+<span style="color:#6b6b6b"> let</span>
+</div>
+</div>
+</div>
+<div style="margin-bottom:0">
+<div style="font-family:system-ui,sans-serif;font-size:13px;font-weight:500;margin-bottom:8px;color:#2d2d2d">
+Počáteční jednorázová investice
+</div>
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#8e8e8e;margin-bottom:6px">
+<span>0 Kč</span><span>10 000 000 Kč</span>
+</div>
+<input id="pc-initial" class="pc-slider" type="range" min="0" max="10000000" step="10000" value="0" style="--slider-progress: 0%; --slider-fill-color: rgb(168,159,148);">
+<div style="display:flex;justify-content:flex-end;margin-top:8px">
+<div style="padding:6px 14px;border-radius:4px;border:1px solid #e8e4df;font-size:13px;background:#fff">
+<input id="pc-initial-d" type="text" inputmode="numeric" style="width:100px;border:0;background:transparent;font-size:13px;outline:0;color:#3d2c29" value="0">
+<span style="color:#6b6b6b"> Kč</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pc-divider"></div>
+<div>
+<div style="font-family:system-ui,sans-serif;font-size:11px;font-weight:600;color:#a89f94;text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px">
+Fáze čerpání
+</div>
+<div style="margin-bottom:28px">
+<div style="font-family:system-ui,sans-serif;font-size:13px;font-weight:500;margin-bottom:8px;color:#2d2d2d">
+Požadovaná měsíční penze
+<span id="pc-pension-note" style="font-weight:400;color:#a89f94;display:none">
+(dnes)</span>
+</div>
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#8e8e8e;margin-bottom:6px">
+<span>1 000 Kč</span><span>200 000 Kč</span>
+</div>
+<input id="pc-pension" class="pc-slider" type="range" min="1000" max="200000" step="1000" value="40000" style="--slider-progress: 19.597989949748744%; --slider-fill-color: rgb(147,136,127);">
+<div style="display:flex;justify-content:flex-end;margin-top:8px">
+<div style="padding:6px 14px;border-radius:4px;border:1px solid #e8e4df;font-size:13px;background:#fff">
+<input id="pc-pension-d" type="text" inputmode="numeric" style="width:100px;border:0;background:transparent;font-size:13px;outline:0;color:#3d2c29" value="40&nbsp;000">
+<span style="color:#6b6b6b"> Kč</span>
+</div>
+</div>
+</div>
+<div style="margin-bottom:28px">
+<div style="font-family:system-ui,sans-serif;font-size:13px;font-weight:500;margin-bottom:8px;color:#2d2d2d">
+DÃ©lka čerpání penze
+</div>
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#8e8e8e;margin-bottom:6px">
+<span>5 let</span><span>40 let</span>
+</div>
+<input id="pc-ret-years" class="pc-slider" type="range" min="5" max="40" step="1" value="25" style="--slider-progress: 57.14285714285714%; --slider-fill-color: rgb(107,93,87);">
+<div style="display:flex;justify-content:flex-end;margin-top:8px">
+<div style="padding:6px 14px;border-radius:4px;border:1px solid #e8e4df;font-size:13px;background:#fff">
+<input id="pc-ret-years-d" type="text" inputmode="numeric" style="width:44px;border:0;background:transparent;font-size:13px;outline:0;color:#3d2c29" value="25">
+<span style="color:#6b6b6b"> let</span>
+</div>
+</div>
+</div>
+<div style="margin-bottom:0">
+<div style="font-family:system-ui,sans-serif;font-size:13px;font-weight:500;margin-bottom:8px;color:#2d2d2d">
+VÃ½nos při čerpání
+</div>
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#8e8e8e;margin-bottom:6px">
+<span>0 %</span><span>15 %</span>
+</div>
+<input id="pc-ret-rate" class="pc-slider" type="range" min="0" max="15" step="0.1" value="4" style="--slider-progress: 26.666666666666668%; --slider-fill-color: rgb(139,128,119);">
+<div style="display:flex;justify-content:flex-end;margin-top:8px">
+<div style="padding:6px 14px;border-radius:4px;border:1px solid #e8e4df;font-size:13px;background:#fff">
+<input id="pc-ret-rate-d" type="text" inputmode="decimal" style="width:44px;border:0;background:transparent;font-size:13px;outline:0;color:#3d2c29" value="4.0">
+<span style="color:#6b6b6b"> %</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pc-card" style="flex:1.2;padding:40px 36px;border-radius:4px;background:#faf9f7;border:1px solid #e8e4df;box-shadow:0 2px 12px rgba(61,44,41,0.04);min-width:300px;transition:box-shadow .25s ease">
+<div style="font-size:12px;color:#6b6b6b;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">
+Měsíční Ãºložka
+</div>
+<div id="pc-result" style="font-family:&quot;Georgia&quot;,serif;font-size:36px;font-weight:400;color:#3d2c29;margin-bottom:4px;min-height:1.3em;letter-spacing:.02em">5&nbsp;068&nbsp;Kč</div>
+<div id="pc-sub" style="font-size:11px;color:#8e8e8e;margin-bottom:28px;min-height:2.2em">pro penzi 40&nbsp;000&nbsp;Kč/měs. po dobu 25 let</div>
+<div id="pc-pie" style="width:340px;height:340px;margin:0 auto 28px;position:relative">
+        <div style="position:relative; width:340px; height:340px; opacity:0; animation:pc-fadein 0.35s ease-out forwards; overflow:visible;">
+          <svg width="340" height="340" viewBox="0 0 340 340" style="overflow:visible;">
+            <defs>
+              <filter id="pc-glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur>
+                <feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge>
+              </filter>
+              <pattern id="pc-stripe" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(-45)">
+                <rect width="8" height="8" fill="#d4b896" fill-opacity="0.55"></rect>
+                <line x1="0" y1="0" x2="0" y2="12" stroke="#4a3020" stroke-width="2.5" opacity="1"></line>
+              </pattern>
+            </defs>
+            <circle cx="170" cy="170" r="133" fill="#f5f4f2"></circle>
+            <path class="pc-pie-dep" fill="#3d2c29" style="cursor:pointer; transition:filter 0.2s;" d="M 170 170 L 170 37 A 133 133 0 0 1 278.59110803327366 93.20826049563736 Z"></path>
+            <path class="pc-pie-sg" fill="#8b5a3d" style="cursor:pointer; transition:filter 0.2s;" d="M 170 170 L 278.59110803327366 93.20826049563736 A 133 133 0 0 1 71.00534045015638 258.82036579867565 Z"></path>
+            <path class="pc-pie-rg" fill="#6b8f71" style="cursor:pointer; transition:filter 0.2s;" d="M 170 170 L 71.00534045015638 258.82036579867565 A 133 133 0 0 1 169.99999999999997 37 Z"></path>
+            <path class="pc-pie-inf" fill="url(#pc-stripe)" style="cursor:pointer; transition:filter 0.2s; display:none;"></path>
+            <circle cx="170" cy="170" r="73.15" fill="#fff"></circle>
+            <image href="Kalkula%C4%8Dka%20pro%20rentu_files/transpfavicon.png" x="140.74" y="140.74" width="58.52" height="58.52" style="pointer-events:none;"></image>
+          </svg>
+          <div id="pc-pie-tip" style="position:fixed; background:#fff; border:1px solid #ddd; border-radius:8px; padding:8px 12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); font-size:12px; z-index:9999; pointer-events:none; white-space:nowrap; opacity:0; transition:opacity 0.15s; visibility:hidden;"></div>
+        </div></div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;align-items:center;gap:14px">
+<span style="width:16px;height:16px;border-radius:4px;background:#3d2c29;flex-shrink:0"></span>
+<div>
+<div style="font-size:12px;color:#6b6b6b">
+Vlastní vklady celkem
+</div>
+<div id="pc-leg-deposits" style="font-size:15px;font-weight:500;color:#3d2c29">1&nbsp;824&nbsp;447&nbsp;Kč</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:14px">
+<span style="width:16px;height:16px;border-radius:4px;background:#8b5a3d;flex-shrink:0"></span>
+<div>
+<div style="font-size:12px;color:#6b6b6b">
+VÃ½nosy ze spoření
+</div>
+<div id="pc-leg-sav-growth" style="font-size:15px;font-weight:500;color:#3d2c29">5&nbsp;778&nbsp;912&nbsp;Kč</div>
+<div id="pc-leg-sav-rate" style="font-size:11px;color:#8e8e8e">/ 8,00 % p.a.</div>
+</div>
+</div>
+<div style="display:flex;align-items:center;gap:14px">
+<span style="width:16px;height:16px;border-radius:4px;background:#6b8f71;flex-shrink:0"></span>
+<div>
+<div style="font-size:12px;color:#6b6b6b">
+VÃ½nosy při čerpání
+</div>
+<div id="pc-leg-ret-growth" style="font-size:15px;font-weight:500;color:#3d2c29">4&nbsp;396&nbsp;640&nbsp;Kč</div>
+<div id="pc-leg-ret-rate" style="font-size:11px;color:#8e8e8e">/ 4,00 % p.a.</div>
+</div>
+</div>
+<div id="pc-leg-infl-wrap" style="display:flex;align-items:center;gap:14px;visibility:hidden;min-height:52px">
+<span style="width:16px;height:16px;border-radius:4px;flex-shrink:0;background:#d4b896;background-image:repeating-linear-gradient(-45deg,transparent,transparent 1px,rgba(61,44,41,0.85) 1px,rgba(61,44,41,0.85) 3px);border:1px solid rgba(74,48,32,0.35)"></span>
+<div>
+<div style="font-size:12px;color:#6b6b6b">
+Inflační příplatek
+</div>
+<div id="pc-leg-infl" style="font-size:15px;font-weight:500;color:#3d2c29">0&nbsp;Kč</div>
+<div id="pc-leg-infl-rate" style="font-size:11px;color:#8e8e8e"></div>
+</div>
+</div>
+</div>
+<div style="margin-top:24px;padding:16px 20px;border-radius:4px;background:#f0ede8;border:1px solid #e8e4df">
+<div style="font-size:11px;color:#8e8e8e;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px">
+PotřebnÃ½ kapitál na odchod do dúchodu
+</div>
+<div id="pc-capital" style="font-family:&quot;Georgia&quot;,serif;font-size:22px;color:#3d2c29;letter-spacing:.02em">7&nbsp;603&nbsp;360&nbsp;Kč</div>
+</div>
+</div>
+</div>
+<div class="pc-card" style="margin-top:32px;padding:36px 40px;border-radius:4px;background:#faf9f7;border:1px solid #e8e4df;box-shadow:0 2px 12px rgba(61,44,41,0.04)">
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:20px">
+<div style="font-family:system-ui,sans-serif;font-size:12px;font-weight:500;color:#6b6b6b;text-transform:uppercase;letter-spacing:.06em">
+Prúběh spoření a čerpání
+</div>
+<button type="button" id="pc-infl-toggle" class="pc-infl-toggle">
+Počítat s inflací?
+</button>
+</div>
+<div id="pc-phase-chart" style="width:100%;height:300px">
+      <div style="position:relative; width:100%; height:300px;">
+        <svg width="1018" height="300" viewBox="0 0 1018 300" style="overflow:visible;">
+          <defs>
+            <linearGradient id="pc-grad-dep" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#3d2c29"></stop><stop offset="100%" stop-color="#3d2c29" stop-opacity="0.85"></stop>
+            </linearGradient>
+            <linearGradient id="pc-grad-sg" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#8b5a3d"></stop><stop offset="100%" stop-color="#8b5a3d" stop-opacity="0.75"></stop>
+            </linearGradient>
+            <linearGradient id="pc-grad-draw" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#6b8f71" stop-opacity="0.9"></stop><stop offset="100%" stop-color="#6b8f71" stop-opacity="0.5"></stop>
+            </linearGradient>
+            <pattern id="pc-infl-stripe" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(-45)">
+              <rect width="6" height="6" fill="#c4a574" fill-opacity="0.35"></rect>
+              <line x1="0" y1="0" x2="0" y2="12" stroke="#5c3d2a" stroke-width="3" opacity="0.95"></line>
+            </pattern>
+          </defs>
+          <!-- Grid -->
+          
+            <line x1="62" y1="268" x2="990" y2="268" stroke="#eee" stroke-dasharray="2,2"></line>
+            <text x="56" y="272" text-anchor="end" font-size="10" fill="#777">0.0M</text>
+          
+            <line x1="62" y1="205.0000096073179" x2="990" y2="205.0000096073179" stroke="#eee" stroke-dasharray="2,2"></line>
+            <text x="56" y="209.0000096073179" text-anchor="end" font-size="10" fill="#777">2.0M</text>
+          
+            <line x1="62" y1="141.99998794742504" x2="990" y2="141.99998794742504" stroke="#eee" stroke-dasharray="2,2"></line>
+            <text x="56" y="145.99998794742504" text-anchor="end" font-size="10" fill="#777">4.0M</text>
+          
+            <line x1="62" y1="78.99999755474292" x2="990" y2="78.99999755474292" stroke="#eee" stroke-dasharray="2,2"></line>
+            <text x="56" y="82.99999755474292" text-anchor="end" font-size="10" fill="#777">6.0M</text>
+          
+            <line x1="62" y1="16.000007162060832" x2="990" y2="16.000007162060832" stroke="#eee" stroke-dasharray="2,2"></line>
+            <text x="56" y="20.000007162060832" text-anchor="end" font-size="10" fill="#777">8.1M</text>
+          
+          <!-- Year ticks -->
+          <text x="62" y="282" text-anchor="middle" font-size="10" fill="#999">0</text><text x="180.1090909090909" y="282" text-anchor="middle" font-size="10" fill="#999">7</text><text x="298.2181818181818" y="282" text-anchor="middle" font-size="10" fill="#999">14</text><text x="416.32727272727277" y="282" text-anchor="middle" font-size="10" fill="#999">21</text><text x="534.4363636363636" y="282" text-anchor="middle" font-size="10" fill="#999">28</text><text x="652.5454545454545" y="282" text-anchor="middle" font-size="10" fill="#999">35</text><text x="770.6545454545455" y="282" text-anchor="middle" font-size="10" fill="#999">42</text><text x="888.7636363636364" y="282" text-anchor="middle" font-size="10" fill="#999">49</text><text x="990" y="282" text-anchor="middle" font-size="10" fill="#999">55</text>
+          <!-- Phase separator -->
+          <line x1="568.1818181818181" y1="16" x2="568.1818181818181" y2="268" stroke="#c8bfb8" stroke-width="1.5" stroke-dasharray="6,3"></line>
+          <!-- Phase labels -->
+          <text x="315.09090909090907" y="14" text-anchor="middle" font-size="10" fill="#a89f94" letter-spacing="0.04em">SPOÅ˜ENÃ</text>
+          <text x="779.090909090909" y="14" text-anchor="middle" font-size="10" fill="#7a9e7a" letter-spacing="0.04em">ÄŒERPÃNÃ</text>
+          <!-- Accumulation areas -->
+          <path d="M 62 268 L 62 268 L 78.87272727272727 266.0984873977455 L 95.74545454545455 264.196974795491 L 112.61818181818182 262.29546219323646 L 129.4909090909091 260.39394959098195 L 146.36363636363637 258.4924369887274 L 163.23636363636365 256.5909243864729 L 180.1090909090909 254.68941178421838 L 196.98181818181817 252.78789918196387 L 213.85454545454544 250.88638657970932 L 230.72727272727272 248.9848739774548 L 247.60000000000002 247.0833613752003 L 264.4727272727273 245.18184877294578 L 281.3454545454546 243.28033617069124 L 298.2181818181818 241.37882356843673 L 315.09090909090907 239.47731096618222 L 331.96363636363634 237.5757983639277 L 348.8363636363636 235.6742857616732 L 365.7090909090909 233.77277315941868 L 382.58181818181816 231.87126055716416 L 399.45454545454544 229.96974795490965 L 416.32727272727277 228.06823535265514 L 433.20000000000005 226.16672275040062 L 450.07272727272726 224.26521014814608 L 466.94545454545454 222.36369754589157 L 483.8181818181818 220.46218494363703 L 500.6909090909091 218.5606723413825 L 517.5636363636363 216.659159739128 L 534.4363636363636 214.7576471368735 L 551.3090909090909 212.85613453461897 L 568.1818181818181 210.95462193236443 L 568.1818181818181 268 Z" fill="url(#pc-grad-dep)" stroke="#3d2c29" stroke-width="1"></path>
+          <path d="M 62 268 L 62 268 L 78.87272727272727 266.0984873977455 L 95.74545454545455 264.196974795491 L 112.61818181818182 262.29546219323646 L 129.4909090909091 260.39394959098195 L 146.36363636363637 258.4924369887274 L 163.23636363636365 256.5909243864729 L 180.1090909090909 254.68941178421838 L 196.98181818181817 252.78789918196387 L 213.85454545454544 250.88638657970932 L 230.72727272727272 248.9848739774548 L 247.60000000000002 247.0833613752003 L 264.4727272727273 245.18184877294578 L 281.3454545454546 243.28033617069124 L 298.2181818181818 241.37882356843673 L 315.09090909090907 239.47731096618222 L 331.96363636363634 237.5757983639277 L 348.8363636363636 235.6742857616732 L 365.7090909090909 233.77277315941868 L 382.58181818181816 231.87126055716416 L 399.45454545454544 229.96974795490965 L 416.32727272727277 228.06823535265514 L 433.20000000000005 226.16672275040062 L 450.07272727272726 224.26521014814608 L 466.94545454545454 222.36369754589157 L 483.8181818181818 220.46218494363703 L 500.6909090909091 218.5606723413825 L 517.5636363636363 216.659159739128 L 534.4363636363636 214.7576471368735 L 551.3090909090909 212.85613453461897 L 568.1818181818181 210.95462193236443 L 568.1818181818181 30.264150943396253 L 551.3090909090909 50.317639184639255 L 534.4363636363636 68.83425725804645 L 517.5636363636363 85.93178865765982 L 500.6909090909091 101.7189901218727 L 483.8181818181818 116.2962834308519 L 466.94545454545454 129.7563941856116 L 450.07272727272726 142.1849416319883 L 433.20000000000005 153.66098328136437 L 416.32727272727277 164.2575177924514 L 399.45454545454544 174.04194931294558 L 382.58181818181816 183.07651623471355 L 365.7090909090909 191.41868708980502 L 348.8363636363636 199.12152610557024 L 331.96363636363634 206.23403074416595 L 315.09090909090907 212.80144337352357 L 298.2181818181818 218.86553905230846 L 281.3454545454546 224.4648912594584 L 264.4727272727273 229.6351172585965 L 247.60000000000002 234.40910465807278 L 230.72727272727272 238.81722060777358 L 213.85454545454544 242.88750496339176 L 196.98181818181817 246.64584864686825 L 180.1090909090909 250.11615833754897 L 163.23636363636365 253.32050854165064 L 146.36363636363637 256.2792820073446 L 129.4909090909091 259.01129937863215 L 112.61818181818182 261.53393891273595 L 95.74545454545455 263.86324702252455 L 78.87272727272727 266.0140403471263 L 62 268 Z" fill="url(#pc-grad-sg)" stroke="#8b5a3d" stroke-width="1"></path>
+          
+          <!-- Drawdown area -->
+          <path d="M 568.1818181818181 268 L 568.1818181818181 30.264150943396253 L 585.0545454545454 35.91587355721035 L 601.9272727272727 41.79785607046587 L 618.8 47.91947962673865 L 635.6727272727272 54.29050757186809 L 652.5454545454545 60.92110102546723 L 669.4181818181818 67.82183508683988 L 686.290909090909 75.00371570115198 L 703.1636363636363 82.47819721275692 L 720.0363636363636 90.25720063367008 L 736.9090909090909 98.3531326563296 L 753.7818181818182 106.77890544096599 L 770.6545454545455 115.54795720914005 L 787.5272727272728 124.67427367629303 L 804.4000000000001 134.17241035749208 L 821.2727272727274 144.05751578194628 L 838.1454545454545 154.3453556533175 L 855.0181818181818 165.05233799436016 L 871.8909090909091 176.19553931599188 L 888.7636363636364 187.7927318525327 L 905.6363636363636 199.86241190655005 L 922.5090909090909 212.4238293485163 L 939.3818181818182 225.4970183183278 L 956.2545454545455 239.10282917765144 L 973.1272727272727 253.26296176405876 L 990 267.9999999999851 L 990 268 Z" fill="url(#pc-grad-draw)" stroke="#6b8f71" stroke-width="1.5"></path>
+          <!-- Hover layer -->
+          <rect id="pc-hover-rect" x="62" y="16" width="928" height="252" fill="transparent" style="cursor:crosshair;"></rect>
+          <line id="pc-hover-line" x1="62" y1="16" x2="62" y2="268" stroke="#5c4a3d" stroke-width="1" stroke-dasharray="4,4" opacity="0" style="pointer-events:none;"></line>
+          <text x="62" y="296" text-anchor="middle" font-size="10" fill="#777" style="display:none;">Roky</text>
+        </svg>
+        <div id="pc-chart-tip" style="display:none; position:absolute; background:#faf9f7; border:1px solid #e8e4df; border-radius:4px; padding:10px 14px; box-shadow:0 2px 12px rgba(61,44,41,0.08); font-size:12px; z-index:10; pointer-events:none; min-width:160px; white-space:nowrap;"></div>
+      </div></div>
+<div style="display:flex;gap:26px;justify-content:center;margin-top:12px;font-size:12px;flex-wrap:wrap;color:#6b6b6b">
+<span style="display:flex;align-items:center;gap:8px"><span style="width:14px;height:14px;border-radius:3px;background:#8b5a3d"></span>
+VÃ½nosy ze spoření</span>
+<span id="pc-chart-infl-leg" style="display:flex;align-items:center;gap:8px;visibility:hidden"><span style="width:14px;height:14px;border-radius:3px;background:#d4b896;background-image:repeating-linear-gradient(-45deg,transparent,transparent 1px,rgba(61,44,41,0.85) 1px,rgba(61,44,41,0.85) 3px);border:1px solid rgba(74,48,32,0.35)"></span>
+Ãšbytek inflací</span>
+<span style="display:flex;align-items:center;gap:8px"><span style="width:14px;height:14px;border-radius:3px;background:#3d2c29"></span>
+Vklady</span>
+<span style="display:flex;align-items:center;gap:8px"><span style="width:14px;height:14px;border-radius:3px;background:#6b8f71"></span>
+ÄŒerpání penze</span>
+</div>
+<div id="pc-infl-section" style="margin-top:20px;padding-top:20px;border-top:1px solid #e8e4df;min-height:160px;visibility:hidden">
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+<span style="font-size:13px;font-weight:500;color:#2d2d2d">Předpokládaná inflace</span>
+<span style="font-size:11px;color:#8e8e8e">DoporučenÃ©: 3,2 %</span>
+</div>
+<div style="display:flex;justify-content:space-between;font-size:11px;color:#8e8e8e;margin-bottom:4px">
+<span>0,1 %</span><span>8 %</span>
+</div>
+<input id="pc-inflation" class="pc-slider" type="range" min="0.1" max="8" step="0.1" value="3.2" style="--slider-progress: 39.24050632911392%; --slider-fill-color: rgb(126,114,106);">
+<div style="display:flex;justify-content:flex-end;margin-top:6px">
+<div style="padding:6px 14px;border-radius:4px;border:1px solid #e8e4df;font-size:13px;background:#fff">
+<input id="pc-inflation-d" type="text" inputmode="decimal" style="width:50px;border:0;background:transparent;font-size:13px;outline:0;color:#3d2c29" value="3.2">
+<span style="color:#6b6b6b"> %</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="module">
+    const fmtCZK = (v) =>
+        new Intl.NumberFormat("cs-CZ", {
+            style: "currency",
+            currency: "CZK",
+            maximumFractionDigits: 0,
+        }).format(v);
+    const fmtInput = (v) =>
+        new Intl.NumberFormat("cs-CZ", {
+            style: "decimal",
+            maximumFractionDigits: 0,
+        }).format(v);
+    const parse = (s) =>
+        Number(String(s).replace(/\s/g, "").replace(",", ".")) || 0;
+
+    let inflOn = false;
+
+    // â”€â”€ Core math â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    // Annuity-due PV: how much capital C is needed at retirement start
+    // to pay `pension` per month for `retYears` years at monthly rate `r`
+    function capitalNeeded(pension, retYears, retRatePct) {
+        const r = retRatePct / 100 / 12;
+        const n = retYears * 12;
+        if (r === 0) return pension * n;
+        // PV of annuity-due = PMT * (1+r) * (1-(1+r)^-n)/r
+        return (pension * (1 + r) * (1 - Math.pow(1 + r, -n))) / r;
+    }
+
+    // Monthly saving needed during accumulation to reach capital C
+    function monthlyNeeded(C, initial, savRatePct, savYears) {
+        const r = savRatePct / 100 / 12;
+        const n = savYears * 12;
+        const fvInit = initial * Math.pow(1 + r, n);
+        const rem = C - fvInit;
+        if (rem <= 0) return 0;
+        if (r === 0) return rem / n;
+        return rem / (((1 + r) * (Math.pow(1 + r, n) - 1)) / r);
+    }
+
+    // Build accumulation schedule year by year
+    function buildAccumSchedule(C, initial, monthly, savRatePct, savYears) {
+        const r = savRatePct / 100 / 12;
+        const data = [{ year: 0, deposits: initial, value: initial }];
+        for (let y = 1; y <= savYears; y++) {
+            const n = y * 12;
+            const fvInit = initial * Math.pow(1 + r, n);
+            const fvMonth =
+                r > 0 && monthly > 0
+                    ? (monthly * (1 + r) * (Math.pow(1 + r, n) - 1)) / r
+                    : monthly * n;
+            data.push({
+                year: y,
+                deposits: initial + monthly * n,
+                value: fvInit + fvMonth,
+            });
+        }
+        return data;
+    }
+
+    // Build drawdown schedule year by year (capital declines as pension is paid)
+    function buildDrawdownSchedule(
+        C,
+        pension,
+        retRatePct,
+        retYears,
+        startYear,
+    ) {
+        const r = retRatePct / 100 / 12;
+        const data = [{ year: startYear, balance: C }];
+        let bal = C;
+        for (let y = 1; y <= retYears; y++) {
+            for (let m = 0; m < 12; m++) {
+                bal = bal * (1 + r) - pension; // annuity-due: withdraw at start, then grow (simplified: grow then withdraw)
+                // Proper annuity-due: at start of month pay pension, remaining grows
+                // bal = (bal - pension) * (1 + r)
+            }
+            bal = Math.max(0, bal);
+            data.push({ year: startYear + y, balance: bal });
+        }
+        return data;
+    }
+
+    // More accurate drawdown: annuity-due means pay at START of period
+    function buildDrawdownAccurate(
+        C,
+        pension,
+        retRatePct,
+        retYears,
+        startYear,
+    ) {
+        const r = retRatePct / 100 / 12;
+        const data = [{ year: startYear, balance: C }];
+        let bal = C;
+        for (let y = 1; y <= retYears; y++) {
+            for (let m = 0; m < 12; m++) {
+                bal = (bal - pension) * (1 + r); // pay first, then earn
+                if (bal < 0) bal = 0;
+            }
+            data.push({ year: startYear + y, balance: bal });
+        }
+        return data;
+    }
+
+    // â”€â”€ Animate value â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    let animRaf = null;
+    function animateValue(el, to, dur = 1200) {
+        if (animRaf) cancelAnimationFrame(animRaf);
+        const from =
+            parse(String(el.textContent).replace(/[^\d\s,.-]/g, "")) || 0;
+        const t0 = performance.now();
+        function tick(now) {
+            const p = Math.min((now - t0) / dur, 1),
+                e = 1 - Math.pow(1 - p, 3);
+            el.textContent = fmtCZK(Math.round(from + (to - from) * e));
+            if (p < 1) animRaf = requestAnimationFrame(tick);
+            else animRaf = null;
+        }
+        animRaf = requestAnimationFrame(tick);
+    }
+
+    // â”€â”€ Pie chart â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    let pieInit = false;
+    let pieRaf = null;
+    let pieState = { dep: 0.3, sg: 0.25, rg: 0.25, inf: 0.2 };
+
+    function renderPie(
+        deposits,
+        savGrowth,
+        retGrowth,
+        inflPremium,
+        savRatePct,
+        retRatePct,
+        inflRatePct,
+    ) {
+        const total =
+            deposits + savGrowth + retGrowth + (inflOn ? inflPremium : 0);
+        const container = document.getElementById("pc-pie");
+        const size = 340,
+            cx = size / 2,
+            cy = size / 2,
+            R = 133;
+
+        const tDep = total > 0 ? deposits / total : 0;
+        const tSG = total > 0 ? savGrowth / total : 0;
+        const tRG = total > 0 ? retGrowth / total : 0;
+        const tInf = total > 0 && inflOn ? inflPremium / total : 0;
+
+        const angle = (t) => -Math.PI / 2 + t * 2 * Math.PI;
+        const arc = (s, e) => {
+            if (e - s >= 0.9999) e = s + 0.9998;
+            if (e <= s) return `M ${cx} ${cy} Z`;
+            const x1 = cx + R * Math.cos(angle(s)),
+                y1 = cy + R * Math.sin(angle(s));
+            const x2 = cx + R * Math.cos(angle(e)),
+                y2 = cy + R * Math.sin(angle(e));
+            return `M ${cx} ${cy} L ${x1} ${y1} A ${R} ${R} 0 ${e - s > 0.5 ? 1 : 0} 1 ${x2} ${y2} Z`;
+        };
+
+        if (!pieInit) {
+            pieInit = true;
+            container.innerHTML = `
+        <div style="position:relative; width:${size}px; height:${size}px; opacity:0; animation:pc-fadein 0.35s ease-out forwards; overflow:visible;">
+          <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" style="overflow:visible;">
+            <defs>
+              <filter id="pc-glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <pattern id="pc-stripe" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(-45)">
+                <rect width="8" height="8" fill="#d4b896" fill-opacity="0.55"/>
+                <line x1="0" y1="0" x2="0" y2="12" stroke="#4a3020" stroke-width="2.5" opacity="1"/>
+              </pattern>
+            </defs>
+            <circle cx="${cx}" cy="${cy}" r="${R}" fill="#f5f4f2"/>
+            <path class="pc-pie-dep"  fill="#3d2c29" style="cursor:pointer; transition:filter 0.2s;"/>
+            <path class="pc-pie-sg"   fill="#8b5a3d" style="cursor:pointer; transition:filter 0.2s;"/>
+            <path class="pc-pie-rg"   fill="#6b8f71" style="cursor:pointer; transition:filter 0.2s;"/>
+            <path class="pc-pie-inf"  fill="url(#pc-stripe)" style="cursor:pointer; transition:filter 0.2s; display:none;"/>
+            <circle cx="${cx}" cy="${cy}" r="${R * 0.55}" fill="#fff"/>
+            <image
+              href="https://assets.kovacsebastian.com/transpfavicon.png"
+              x="${cx - R * 0.22}"
+              y="${cy - R * 0.22}"
+              width="${R * 0.44}"
+              height="${R * 0.44}"
+              style="pointer-events:none;"
+            />
+          </svg>
+          <div id="pc-pie-tip" style="position:fixed; background:#fff; border:1px solid #ddd; border-radius:8px; padding:8px 12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); font-size:12px; z-index:9999; pointer-events:none; white-space:nowrap; opacity:0; transition:opacity 0.15s; visibility:hidden;"></div>
+        </div>`;
+
+            const svg = container.querySelector("svg");
+            const tip = container.querySelector("#pc-pie-tip");
+            const hide = () => {
+                tip.style.opacity = "0";
+                tip.style.visibility = "hidden";
+                svg.querySelectorAll("path").forEach(
+                    (p) => (p.style.filter = ""),
+                );
+            };
+            const show = (lbl, val, x, y) => {
+                tip.innerHTML = `<div style="font-weight:600;color:#2d2d2d;">${lbl}</div><div style="color:#3d2c29;">${val}</div>`;
+                tip.style.left = x + 12 + "px";
+                tip.style.top = y - 30 + "px";
+                tip.style.visibility = "visible";
+                tip.style.opacity = "1";
+            };
+            [
+                [
+                    ".pc-pie-dep",
+                    "Vlastní vklady celkem",
+                    () => fmtCZK(deposits),
+                ],
+                [".pc-pie-sg", "VÃ½nosy ze spoření", () => fmtCZK(savGrowth)],
+                [".pc-pie-rg", "VÃ½nosy při čerpání", () => fmtCZK(retGrowth)],
+                [
+                    ".pc-pie-inf",
+                    "Inflační příplatek",
+                    () => fmtCZK(inflPremium),
+                ],
+            ].forEach(([sel, lbl, val]) => {
+                const el = container.querySelector(sel);
+                el.addEventListener("mouseenter", (e) => {
+                    el.style.filter = "url(#pc-glow)";
+                    show(lbl, val(), e.clientX, e.clientY);
+                });
+                el.addEventListener("mouseleave", hide);
+                el.addEventListener("mousemove", (e) => {
+                    tip.style.left = e.clientX + 12 + "px";
+                    tip.style.top = e.clientY - 30 + "px";
+                });
+            });
+        }
+
+        // Center: blended effective rate (geometric mean of saving + retirement rates, weighted by years)
+        const savYears = +document.getElementById("pc-sav-years").value;
+        const retYears = +document.getElementById("pc-ret-years").value;
+        const totalYrs = savYears + retYears;
+        const wS = savYears / (totalYrs || 1),
+            wR = retYears / (totalYrs || 1);
+        const effSav = Math.pow(1 + savRatePct / 100 / 12, 12) - 1;
+        const effRet = Math.pow(1 + retRatePct / 100 / 12, 12) - 1;
+        const blendedNom = (1 + effSav) * wS * (1 + effRet) * wR - 1; // rough weighted blend
+        const effInfl = inflOn
+            ? Math.pow(1 + inflRatePct / 100 / 12, 12) - 1
+            : 0;
+        const realRate = inflOn
+            ? ((1 + blendedNom) / (1 + effInfl) - 1) * 100
+            : blendedNom * 100;
+
+        const rateEl = container.querySelector(".pc-pie-rate");
+        const labelEl = container.querySelector(".pc-pie-label");
+        if (rateEl) {
+            rateEl.textContent = realRate.toFixed(2).replace(".", ",") + " %";
+            rateEl.setAttribute("fill", realRate >= 0 ? "#3d2c29" : "#b85c3a");
+        }
+
+        const infPath = container.querySelector(".pc-pie-inf");
+        if (infPath)
+            infPath.style.display =
+                inflOn && inflPremium > 0 ? "block" : "none";
+
+        // Animate
+        if (pieRaf) cancelAnimationFrame(pieRaf);
+        const s = { ...pieState };
+        const t0 = performance.now();
+        const pDep = container.querySelector(".pc-pie-dep"),
+            pSG = container.querySelector(".pc-pie-sg");
+        const pRG = container.querySelector(".pc-pie-rg"),
+            pInf = container.querySelector(".pc-pie-inf");
+
+        function tick(now) {
+            const p = Math.min((now - t0) / 500, 1),
+                e = 1 - Math.pow(1 - p, 3);
+            const dep = s.dep + (tDep - s.dep) * e,
+                sg = s.sg + (tSG - s.sg) * e,
+                rg = s.rg + (tRG - s.rg) * e,
+                inf = s.inf + (tInf - s.inf) * e;
+            pDep.setAttribute("d", arc(0, dep));
+            pSG.setAttribute("d", arc(dep, dep + sg));
+            pRG.setAttribute("d", arc(dep + sg, dep + sg + rg));
+            if (inflOn)
+                pInf.setAttribute("d", arc(dep + sg + rg, dep + sg + rg + inf));
+            pieState = { dep, sg, rg, inf };
+            if (p < 1) pieRaf = requestAnimationFrame(tick);
+            else pieRaf = null;
+        }
+        pieRaf = requestAnimationFrame(tick);
+    }
+
+    // â”€â”€ Phase chart â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    function renderPhaseChart(
+        accumData,
+        drawData,
+        inflOn,
+        savRatePct,
+        inflRatePct,
+    ) {
+        const container = document.getElementById("pc-phase-chart");
+        const w = Math.max(container.clientWidth || 500, 300);
+        const h = 300;
+        const pad = { top: 16, right: 28, bottom: 32, left: 62 };
+        const savYrs = accumData.length - 1;
+        const retYrs = drawData.length - 1;
+        const totalYrs = savYrs + retYrs;
+
+        const peakVal = accumData[accumData.length - 1].value;
+        const yMax = Math.max(1, peakVal * 1.06);
+
+        const xScale = (yr) =>
+            pad.left + (yr / (totalYrs || 1)) * (w - pad.left - pad.right);
+        const yScale = (v) =>
+            pad.top + (1 - v / yMax) * (h - pad.top - pad.bottom);
+
+        // X coords: saving phase 0..savYrs, then drawdown savYrs..(savYrs+retYrs)
+        const xA = (y) => xScale(y);
+        const xD = (y) => xScale(savYrs + y);
+
+        // Accumulation stacked paths (deposits dark, growth brown)
+        const pathDeposits = (() => {
+            let p = `M ${xA(0)} ${h - pad.bottom}`;
+            accumData.forEach(
+                (d) => (p += ` L ${xA(d.year)} ${yScale(d.deposits)}`),
+            );
+            return p + ` L ${xA(savYrs)} ${h - pad.bottom} Z`;
+        })();
+        const pathSavGrowth = (() => {
+            let p = `M ${xA(0)} ${yScale(accumData[0].deposits)}`;
+            accumData.forEach(
+                (d) => (p += ` L ${xA(d.year)} ${yScale(d.deposits)}`),
+            );
+            const last = accumData[accumData.length - 1];
+            p += ` L ${xA(last.year)} ${yScale(last.value)}`;
+            for (let i = accumData.length - 2; i >= 0; i--)
+                p += ` L ${xA(accumData[i].year)} ${yScale(accumData[i].value)}`;
+            return p + " Z";
+        })();
+
+        // Inflation stripe on accumulation (realValue = value / (1+inf/12)^(y*12))
+        const infMonthly = inflOn ? inflRatePct / 100 / 12 : 0;
+        const pathInflStripe = (() => {
+            if (!inflOn) return "";
+            let p = `M ${xA(0)} ${yScale(accumData[0].value / Math.pow(1 + infMonthly, 0))}`;
+            accumData.forEach((d) => {
+                const rv = d.value / Math.pow(1 + infMonthly, d.year * 12);
+                p += ` L ${xA(d.year)} ${yScale(rv)}`;
+            });
+            const last = accumData[accumData.length - 1];
+            p += ` L ${xA(last.year)} ${yScale(last.value)}`;
+            for (let i = accumData.length - 2; i >= 0; i--)
+                p += ` L ${xA(accumData[i].year)} ${yScale(accumData[i].value)}`;
+            return p + " Z";
+        })();
+
+        // Drawdown area (filled under the declining balance curve â€” green tint)
+        const pathDrawdown = (() => {
+            let p = `M ${xD(0)} ${h - pad.bottom}`;
+            drawData.forEach(
+                (d) => (p += ` L ${xD(d.year - savYrs)} ${yScale(d.balance)}`),
+            );
+            return p + ` L ${xD(retYrs)} ${h - pad.bottom} Z`;
+        })();
+
+        const separatorX = xScale(savYrs);
+        const yTicks = [0, 0.25, 0.5, 0.75, 1].map((t) => Math.round(yMax * t));
+
+        // Year tick labels
+        const yearTicks = [];
+        const step = Math.ceil(totalYrs / 8);
+        for (let y = 0; y <= totalYrs; y += step) yearTicks.push(y);
+        if (!yearTicks.includes(totalYrs)) yearTicks.push(totalYrs);
+
+        container.innerHTML = `
+      <div style="position:relative; width:100%; height:${h}px;">
+        <svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="overflow:visible;">
+          <defs>
+            <linearGradient id="pc-grad-dep" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#3d2c29"/><stop offset="100%" stop-color="#3d2c29" stop-opacity="0.85"/>
+            </linearGradient>
+            <linearGradient id="pc-grad-sg" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#8b5a3d"/><stop offset="100%" stop-color="#8b5a3d" stop-opacity="0.75"/>
+            </linearGradient>
+            <linearGradient id="pc-grad-draw" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#6b8f71" stop-opacity="0.9"/><stop offset="100%" stop-color="#6b8f71" stop-opacity="0.5"/>
+            </linearGradient>
+            <pattern id="pc-infl-stripe" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(-45)">
+              <rect width="6" height="6" fill="#c4a574" fill-opacity="0.35"/>
+              <line x1="0" y1="0" x2="0" y2="12" stroke="#5c3d2a" stroke-width="3" opacity="0.95"/>
+            </pattern>
+          </defs>
+          <!-- Grid -->
+          ${yTicks
+              .map(
+                  (v) => `
+            <line x1="${pad.left}" y1="${yScale(v)}" x2="${w - pad.right}" y2="${yScale(v)}" stroke="#eee" stroke-dasharray="2,2"/>
+            <text x="${pad.left - 6}" y="${yScale(v) + 4}" text-anchor="end" font-size="10" fill="#777">${(v / 1e6).toFixed(1)}M</text>
+          `,
+              )
+              .join("")}
+          <!-- Year ticks -->
+          ${yearTicks.map((y) => `<text x="${xScale(y)}" y="${h - pad.bottom + 14}" text-anchor="middle" font-size="10" fill="#999">${y}</text>`).join("")}
+          <!-- Phase separator -->
+          <line x1="${separatorX}" y1="${pad.top}" x2="${separatorX}" y2="${h - pad.bottom}" stroke="#c8bfb8" stroke-width="1.5" stroke-dasharray="6,3"/>
+          <!-- Phase labels -->
+          <text x="${(pad.left + separatorX) / 2}" y="${pad.top - 2}" text-anchor="middle" font-size="10" fill="#a89f94" letter-spacing="0.04em">SPOÅ˜ENÃ</text>
+          <text x="${(separatorX + w - pad.right) / 2}" y="${pad.top - 2}" text-anchor="middle" font-size="10" fill="#7a9e7a" letter-spacing="0.04em">ÄŒERPÃNÃ</text>
+          <!-- Accumulation areas -->
+          <path d="${pathDeposits}"  fill="url(#pc-grad-dep)" stroke="#3d2c29" stroke-width="1"/>
+          <path d="${pathSavGrowth}" fill="url(#pc-grad-sg)"  stroke="#8b5a3d" stroke-width="1"/>
+          ${inflOn && pathInflStripe ? `<path d="${pathInflStripe}" fill="url(#pc-infl-stripe)" stroke="rgba(74,48,32,0.4)" stroke-width="1"/>` : ""}
+          <!-- Drawdown area -->
+          <path d="${pathDrawdown}" fill="url(#pc-grad-draw)" stroke="#6b8f71" stroke-width="1.5"/>
+          <!-- Hover layer -->
+          <rect id="pc-hover-rect" x="${pad.left}" y="${pad.top}" width="${w - pad.left - pad.right}" height="${h - pad.top - pad.bottom}" fill="transparent" style="cursor:crosshair;"/>
+          <line id="pc-hover-line" x1="${pad.left}" y1="${pad.top}" x2="${pad.left}" y2="${h - pad.bottom}" stroke="#5c4a3d" stroke-width="1" stroke-dasharray="4,4" opacity="0" style="pointer-events:none;"/>
+          <text x="${pad.left}" y="${h - 4}" text-anchor="middle" font-size="10" fill="#777" style="display:none;">Roky</text>
+        </svg>
+        <div id="pc-chart-tip" style="display:none; position:absolute; background:#faf9f7; border:1px solid #e8e4df; border-radius:4px; padding:10px 14px; box-shadow:0 2px 12px rgba(61,44,41,0.08); font-size:12px; z-index:10; pointer-events:none; min-width:160px; white-space:nowrap;"></div>
+      </div>`;
+
+        const hoverRect = container.querySelector("#pc-hover-rect");
+        const hoverLine = container.querySelector("#pc-hover-line");
+        const tooltip = container.querySelector("#pc-chart-tip");
+
+        hoverRect.addEventListener("mousemove", (e) => {
+            const rect = container.getBoundingClientRect();
+            const px = e.clientX - rect.left;
+            const rawYr =
+                ((px - pad.left) / (w - pad.left - pad.right)) * totalYrs;
+            const yr = Math.max(0, Math.min(Math.round(rawYr), totalYrs));
+
+            hoverLine.setAttribute("x1", xScale(yr));
+            hoverLine.setAttribute("x2", xScale(yr));
+            hoverLine.setAttribute("opacity", "0.5");
+            tooltip.style.display = "block";
+            tooltip.style.left = Math.min(px + 16, w - 180) + "px";
+            tooltip.style.top = "16px";
+
+            if (yr <= savYrs) {
+                // Saving phase
+                const d = accumData[Math.min(yr, accumData.length - 1)];
+                const rv = inflOn
+                    ? d.value / Math.pow(1 + infMonthly, d.year * 12)
+                    : null;
+                const inflRow = rv
+                    ? `<div style="margin-top:5px; font-size:10px; color:#a89f94;">Reálná hodnota: ${fmtCZK(rv)}</div>`
+                    : "";
+                tooltip.innerHTML = `
+          <div style="font-size:10px; color:#8e8e8e; margin-bottom:7px;">Rok ${d.year} â€” spoření</div>
+          <div style="display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:3px;background:#8b5a3d;flex-shrink:0;"></span><span>VÃ½nosy: ${fmtCZK(d.value - d.deposits)}</span></div>
+          <div style="display:flex;align-items:center;gap:8px;margin-top:4px;"><span style="width:12px;height:12px;border-radius:3px;background:#3d2c29;flex-shrink:0;"></span><span>Vklady: ${fmtCZK(d.deposits)}</span></div>
+          <div style="margin-top:6px;padding-top:6px;border-top:1px solid #e8e4df;font-size:10px;color:#8e8e8e;">Celkem: ${fmtCZK(d.value)}</div>
+          ${inflRow}`;
+            } else {
+                // Drawdown phase
+                const retYr = yr - savYrs;
+                const d = drawData[Math.min(retYr, drawData.length - 1)];
+                tooltip.innerHTML = `
+          <div style="font-size:10px; color:#8e8e8e; margin-bottom:7px;">Rok ${yr} â€” čerpání (rok ${retYr}/${retYrs})</div>
+          <div style="display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:3px;background:#6b8f71;flex-shrink:0;"></span><span>Zústatek: ${fmtCZK(d.balance)}</span></div>`;
+            }
+        });
+        hoverRect.addEventListener("mouseleave", () => {
+            tooltip.style.display = "none";
+            hoverLine.setAttribute("opacity", "0");
+        });
+    }
+
+    // â”€â”€ Slider sync â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    function syncSlider(el) {
+        const pct = ((+el.value - +el.min) / (+el.max - +el.min)) * 100;
+        el.style.setProperty("--slider-progress", pct + "%");
+        const L = [168, 159, 148],
+            D = [61, 44, 41],
+            t = pct / 100;
+        el.style.setProperty(
+            "--slider-fill-color",
+            `rgb(${Math.round(L[0] + (D[0] - L[0]) * t)},${Math.round(L[1] + (D[1] - L[1]) * t)},${Math.round(L[2] + (D[2] - L[2]) * t)})`,
+        );
+    }
+
+    // â”€â”€ Main update â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    function update() {
+        const savRate = +document.getElementById("pc-sav-rate").value;
+        const savYears = +document.getElementById("pc-sav-years").value;
+        const initial = +document.getElementById("pc-initial").value;
+        const pension = +document.getElementById("pc-pension").value;
+        const retYears = +document.getElementById("pc-ret-years").value;
+        const retRate = +document.getElementById("pc-ret-rate").value;
+        const inflation = +document.getElementById("pc-inflation").value;
+
+        // Inflation: the desired pension is in today's money
+        const infM = inflOn ? inflation / 100 / 12 : 0;
+        const nominalPension = inflOn
+            ? pension * Math.pow(1 + infM, savYears * 12)
+            : pension;
+
+        // How much capital is needed at retirement
+        const C = capitalNeeded(nominalPension, retYears, retRate);
+
+        // With inflation: we need more capital to account for nominal pension growth
+        // (already handled above since nominalPension is larger)
+        const inflPremium = inflOn
+            ? C - capitalNeeded(pension, retYears, retRate)
+            : 0;
+
+        // Monthly saving needed
+        const monthly = monthlyNeeded(C, initial, savRate, savYears);
+
+        // Breakdown
+        const totalDeposits = initial + Math.max(0, monthly) * savYears * 12;
+        const savGrowth = Math.max(0, C - totalDeposits);
+        const totalPensionPaid = nominalPension * retYears * 12;
+        const retGrowth = Math.max(0, totalPensionPaid - C);
+
+        // Sync displays
+        const fields = [
+            ["pc-sav-rate", "pc-sav-rate-d", (v) => v.toFixed(1), true],
+            [
+                "pc-sav-years",
+                "pc-sav-years-d",
+                (v) => String(Math.round(v)),
+                false,
+            ],
+            ["pc-initial", "pc-initial-d", (v) => fmtInput(v), false],
+            ["pc-pension", "pc-pension-d", (v) => fmtInput(v), false],
+            [
+                "pc-ret-years",
+                "pc-ret-years-d",
+                (v) => String(Math.round(v)),
+                false,
+            ],
+            ["pc-ret-rate", "pc-ret-rate-d", (v) => v.toFixed(1), true],
+            ["pc-inflation", "pc-inflation-d", (v) => v.toFixed(1), true],
+        ];
+        fields.forEach(([sliderId, dispId, fmt]) => {
+            const disp = document.getElementById(dispId);
+            if (document.activeElement !== disp)
+                disp.value = fmt(+document.getElementById(sliderId).value);
+        });
+
+        // Pension note
+        const pensionNote = document.getElementById("pc-pension-note");
+        if (pensionNote) pensionNote.style.display = inflOn ? "inline" : "none";
+
+        // Sub text
+        const subEl = document.getElementById("pc-sub");
+        if (monthly <= 0) {
+            subEl.textContent = "Počáteční vklad sám o sobě stačí.";
+            subEl.style.color = "#7a9e7a";
+        } else {
+            const nomStr = inflOn
+                ? ` (nom. ${fmtCZK(nominalPension)}/měs.)`
+                : "";
+            subEl.textContent = `pro penzi ${fmtCZK(pension)}/měs.${nomStr} po dobu ${retYears} let`;
+            subEl.style.color = "#8e8e8e";
+        }
+
+        // Animate big number
+        animateValue(
+            document.getElementById("pc-result"),
+            Math.max(0, monthly),
+        );
+
+        // Capital callout
+        document.getElementById("pc-capital").textContent = fmtCZK(C);
+
+        // Legend
+        document.getElementById("pc-leg-deposits").textContent =
+            fmtCZK(totalDeposits);
+        document.getElementById("pc-leg-sav-growth").textContent =
+            fmtCZK(savGrowth);
+        document.getElementById("pc-leg-sav-rate").textContent =
+            `/ ${savRate.toFixed(2).replace(".", ",")} % p.a.`;
+        document.getElementById("pc-leg-ret-growth").textContent =
+            fmtCZK(retGrowth);
+        document.getElementById("pc-leg-ret-rate").textContent =
+            `/ ${retRate.toFixed(2).replace(".", ",")} % p.a.`;
+
+        const inflWrap = document.getElementById("pc-leg-infl-wrap");
+        if (inflWrap)
+            inflWrap.style.visibility =
+                inflOn && inflPremium > 0 ? "visible" : "hidden";
+        document.getElementById("pc-leg-infl").textContent =
+            fmtCZK(inflPremium);
+        document.getElementById("pc-leg-infl-rate").textContent = inflOn
+            ? `/ ${inflation.toFixed(2).replace(".", ",")} % p.a.`
+            : "";
+
+        // Charts
+        renderPie(
+            totalDeposits,
+            savGrowth,
+            retGrowth,
+            inflPremium,
+            savRate,
+            retRate,
+            inflation,
+        );
+        const accumData = buildAccumSchedule(
+            C,
+            initial,
+            Math.max(0, monthly),
+            savRate,
+            savYears,
+        );
+        const drawData = buildDrawdownAccurate(
+            C,
+            nominalPension,
+            retRate,
+            retYears,
+            savYears,
+        );
+        renderPhaseChart(accumData, drawData, inflOn, savRate, inflation);
+
+        // Toggle legend
+        document.getElementById("pc-chart-infl-leg").style.visibility = inflOn
+            ? "visible"
+            : "hidden";
+    }
+
+    function syncFromDisplay() {
+        const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+        const savRate = clamp(
+            parseFloat(parse(document.getElementById("pc-sav-rate-d").value)) ||
+                8,
+            1,
+            20,
+        );
+        const savYears = clamp(
+            Math.round(
+                parse(document.getElementById("pc-sav-years-d").value),
+            ) || 30,
+            1,
+            45,
+        );
+        const initial = clamp(
+            Math.round(parse(document.getElementById("pc-initial-d").value)),
+            0,
+            10000000,
+        );
+        const pension = clamp(
+            Math.round(parse(document.getElementById("pc-pension-d").value)) ||
+                40000,
+            1000,
+            200000,
+        );
+        const retYears = clamp(
+            Math.round(
+                parse(document.getElementById("pc-ret-years-d").value),
+            ) || 25,
+            5,
+            40,
+        );
+        const retRate = clamp(
+            parseFloat(parse(document.getElementById("pc-ret-rate-d").value)) ||
+                4,
+            0,
+            15,
+        );
+        const inflation = clamp(
+            parseFloat(
+                parse(document.getElementById("pc-inflation-d").value),
+            ) || 3.2,
+            0.1,
+            8,
+        );
+
+        document.getElementById("pc-sav-rate").value = savRate;
+        document.getElementById("pc-sav-years").value = savYears;
+        document.getElementById("pc-initial").value = initial;
+        document.getElementById("pc-pension").value = pension;
+        document.getElementById("pc-ret-years").value = retYears;
+        document.getElementById("pc-ret-rate").value = retRate;
+        document.getElementById("pc-inflation").value = inflation;
+
+        [
+            "pc-sav-rate",
+            "pc-sav-years",
+            "pc-initial",
+            "pc-pension",
+            "pc-ret-years",
+            "pc-ret-rate",
+            "pc-inflation",
+        ].forEach((id) => syncSlider(document.getElementById(id)));
+        update();
+    }
+
+    // Wire sliders
+    [
+        "pc-sav-rate",
+        "pc-sav-years",
+        "pc-initial",
+        "pc-pension",
+        "pc-ret-years",
+        "pc-ret-rate",
+        "pc-inflation",
+    ].forEach((id) => {
+        const el = document.getElementById(id);
+        syncSlider(el);
+        el.addEventListener("input", () => {
+            syncSlider(el);
+            update();
+        });
+        el.addEventListener("change", () => {
+            syncSlider(el);
+            update();
+        });
+    });
+
+    // Wire text inputs
+    [
+        "pc-sav-rate-d",
+        "pc-sav-years-d",
+        "pc-initial-d",
+        "pc-pension-d",
+        "pc-ret-years-d",
+        "pc-ret-rate-d",
+        "pc-inflation-d",
+    ].forEach((id) => {
+        const el = document.getElementById(id);
+        el.addEventListener("input", syncFromDisplay);
+        el.addEventListener("change", syncFromDisplay);
+        el.addEventListener("blur", syncFromDisplay);
+        el.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                el.blur();
+                syncFromDisplay();
+            }
+        });
+    });
+
+    // Inflation toggle
+    document.getElementById("pc-infl-toggle").addEventListener("click", () => {
+        inflOn = !inflOn;
+        document.getElementById("pc-infl-section").style.visibility = inflOn
+            ? "visible"
+            : "hidden";
+        document.getElementById("pc-infl-toggle").textContent = inflOn
+            ? "SkrÃ½t inflaci"
+            : "Počítat s inflací?";
+        update();
+    });
+
+    update();
+
+    let resizeT;
+    window.addEventListener("resize", () => {
+        clearTimeout(resizeT);
+        resizeT = setTimeout(update, 150);
+    });
+</script></div><div style="display:contents"><div style="display:contents"><div class="w-html-embed"><footer class="footer-embed">
+  <div class="footer-inner">
+    <div class="footer-row">
+      <div class="footer-main">
+        <a href="https://kovacsebastian.com/" class="footer-logo-link" aria-label="Domů">
+          <img src="Kalkula%C4%8Dka%20pro%20rentu_files/transpfavicon.png" alt="Sebastián Kováč" class="footer-logo">
+        </a>
+        <div class="footer-name">Sebastián Kováč</div>
+        <div class="footer-tagline">Finanční poradenství a investice</div>
+        <div class="footer-contact">
+          <a href="tel:+420771516683" class="footer-contact-link">+420 771 516 683</a>
+          <a href="mailto:sebastian.kovac@smsfinance.cz" class="footer-contact-link">sebastian.kovac@smsfinance.cz</a>
+          <a href="https://www.linkedin.com/in/sebasti%C3%A1n-kov%C3%A1%C4%8D-240530321/" class="footer-contact-link" target="_blank" rel="noopener noreferrer">LinkedIn profil</a>
+        </div>
+      </div>
+      <div class="footer-map-wrap">
+        <iframe src="Kalkula%C4%8Dka%20pro%20rentu_files/embed.html" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - Pražákova 1008/69, Brno"></iframe>
+      </div>
+      <nav class="footer-links">
+        <a href="https://kovacsebastian.com/" class="footer-link">O Mně</a>
+        <a href="https://kovacsebastian.com/financne-kalkulacky/investicna-kalkulacka" class="footer-link">Finanční Kalkulačky</a>
+        <a href="https://kovacsebastian.com/financni-diagnostika" class="footer-link">Finanční Diagnostika</a>
+        <a href="https://kovacsebastian.com/produkty/investice" class="footer-link">Produkty</a>
+        <a href="https://kovacsebastian.com/zamestnanecke-benefity" class="footer-link">Zaměstnanecké Benefity</a>
+        <a href="https://kovacsebastian.com/investovani-do-nemovitosti" class="footer-link">Investování do Nemovitostí</a>
+        <a href="https://kovacsebastian.com/automatizace-firemnich-procesu" class="footer-link">Automatizace Firemních Procesů</a>
+        <a href="https://kovacsebastian.com/likvidace-pojistnych-udalosti" class="footer-link">Likvidace Pojistných Událostí</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© <span id="footer-year">2026</span> Sebastián Kováč</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var y=document.getElementById("footer-year");
+  if(y)y.textContent=new Date().getFullYear();
+})();
+</script>
+
+<style>
+  /* Scoped to footer only so embed does not affect rest of site */
+  footer.footer-embed {
+    background: #faf9f7;
+    border-top: 1px solid #e8e4df;
+    padding: 48px clamp(24px, 5vw, 64px) 32px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative; /* ensure it layers above background circles */
+    z-index: 2;         /* ensures it’s in front of bg elements */
+  }
+  footer.footer-embed .footer-inner {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  footer.footer-embed .footer-row {
+    display: grid;
+    grid-template-columns: 1fr minmax(min(560px, 100%), auto) 1fr;
+    align-items: start;
+    gap: 48px 56px;
+    margin-bottom: 32px;
+  }
+  footer.footer-embed .footer-main {
+    min-width: 0;
+  }
+  footer.footer-embed .footer-map-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-width: min(560px, 100%);
+  }
+  footer.footer-embed .footer-map-wrap iframe {
+    width: 100% !important;
+    max-width: 560px !important;
+    height: 320px !important;
+    min-width: 0;
+    border-radius: 15px;
+    border: 2px solid #5c4a3d;
+    box-shadow: 0 2px 12px rgba(61,44,41,0.06);
+  }
+  footer.footer-embed .footer-logo-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: opacity 0.25s ease;
+  }
+  footer.footer-embed .footer-logo-link:hover {
+    opacity: 0.8;
+  }
+  footer.footer-embed .footer-logo {
+    display: block;
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+  }
+  footer.footer-embed .footer-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+  footer.footer-embed .footer-tagline {
+    font-size: 14px;
+    color: #6b6b6b;
+    letter-spacing: 0.02em;
+  }
+  footer.footer-embed .footer-contact {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  footer.footer-embed .footer-contact-link {
+    font-size: 14px;
+    color: #6b6b6b;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.25s ease;
+  }
+  footer.footer-embed .footer-contact-link:hover {
+    color: #7d6b5a;
+  }
+  footer.footer-embed .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    text-align: right;
+  }
+  footer.footer-embed .footer-link {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.25s ease;
+  }
+  footer.footer-embed .footer-link:hover {
+    color: #7d6b5a;
+  }
+  @media (max-width: 992px) {
+    footer.footer-embed .footer-row {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "main map" "links links";
+    }
+    footer.footer-embed .footer-main { grid-area: main; }
+    footer.footer-embed .footer-map-wrap { grid-area: map; justify-content: flex-end; }
+    footer.footer-embed .footer-links { grid-area: links; justify-items: start; text-align: left; }
+  }
+  @media (max-width: 640px) {
+    footer.footer-embed .footer-row {
+      grid-template-columns: 1fr;
+      grid-template-areas: "main" "map" "links";
+    }
+    footer.footer-embed .footer-map-wrap { justify-content: center; }
+    footer.footer-embed .footer-map-wrap iframe { max-width: 100%; height: 240px; }
+    footer.footer-embed .footer-links {
+      align-items: flex-start;
+      text-align: left;
+      gap: 6px;
+    }
+  }
+  footer.footer-embed .footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid #e8e4df;
+  }
+  footer.footer-embed .footer-copy {
+    font-size: 13px;
+    color: #8e8e8e;
+    letter-spacing: 0.02em;
+  }
+</style></div></div></div><script>window.__reactRouterContext = {"basename":"/","future":{"unstable_optimizeDeps":false,"unstable_subResourceIntegrity":false,"unstable_trailingSlashAwareDataRequests":false,"unstable_previewServerPrerendering":false,"v8_middleware":false,"v8_splitRouteModules":false,"v8_viteEnvironmentApi":false},"routeDiscovery":{"mode":"lazy","manifestPath":"/__manifest"},"ssr":true,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">;
+import * as route0 from "/assets/root-CKNBTVqL.js";
+import * as route1 from "/assets/_financne-kalkulacky_._kalkulacka-pro-rentu_._index-D4xnT5wP.js";
+  window.__reactRouterManifest = {
+  "entry": {
+    "module": "/assets/entry.client-DAnfYBe0.js",
+    "imports": [
+      "/assets/chunk-LFPYN7LY-KO6my5NK.js"
+    ],
+    "css": []
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/root-CKNBTVqL.js",
+      "imports": [
+        "/assets/chunk-LFPYN7LY-KO6my5NK.js",
+        "/assets/_index-D4jCT0wn.js",
+        "/assets/components-BIsCsZWf.js"
+      ],
+      "css": []
+    },
+    "routes/[financne-kalkulacky].[kalkulacka-pro-rentu]._index": {
+      "id": "routes/[financne-kalkulacky].[kalkulacka-pro-rentu]._index",
+      "parentId": "root",
+      "path": "financne-kalkulacky/kalkulacka-pro-rentu",
+      "index": true,
+      "hasAction": true,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/_financne-kalkulacky_._kalkulacka-pro-rentu_._index-D4xnT5wP.js",
+      "imports": [
+        "/assets/chunk-LFPYN7LY-KO6my5NK.js",
+        "/assets/components-BIsCsZWf.js",
+        "/assets/index-BVj1Hbq_.js"
+      ],
+      "css": []
+    },
+    "routes/_index": {
+      "id": "routes/_index",
+      "parentId": "root",
+      "index": true,
+      "hasAction": true,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/_index-BSyzJvg_.js",
+      "imports": [
+        "/assets/chunk-LFPYN7LY-KO6my5NK.js",
+        "/assets/components-BIsCsZWf.js",
+        "/assets/_index-D4jCT0wn.js",
+        "/assets/index-BVj1Hbq_.js"
+      ],
+      "css": []
+    },
+    "routes/$": {
+      "id": "routes/$",
+      "parentId": "root",
+      "path": "*",
+      "hasAction": true,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/_-DBa8uudx.js",
+      "imports": [
+        "/assets/chunk-LFPYN7LY-KO6my5NK.js",
+        "/assets/components-BIsCsZWf.js",
+        "/assets/index-BVj1Hbq_.js"
+      ],
+      "css": []
+    }
+  },
+  "url": "/assets/manifest-13aa9148.js",
+  "version": "13aa9148"
+};
+  window.__reactRouterRouteModules = {"root":route0,"routes/[financne-kalkulacky].[kalkulacka-pro-rentu]._index":route1};
+
+import("/assets/entry.client-DAnfYBe0.js");</script><script>((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><!--$--><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_36\":-5,\"_37\":-5},\"loaderData\",{\"_3\":4},\"routes/[financne-kalkulacky].[kalkulacka-pro-rentu]._index\",{\"_5\":6,\"_7\":8,\"_9\":10,\"_19\":20,\"_21\":22},\"host\",\"kovacsebastian.com\",\"url\",\"https://kovacsebastian.com/financne-kalkulacky/kalkulacka-pro-rentu\",\"system\",{\"_11\":12,\"_13\":14,\"_15\":16,\"_17\":18},\"params\",{},\"search\",{},\"origin\",\"https://kovacsebastian.com\",\"pathname\",\"/financne-kalkulacky/kalkulacka-pro-rentu\",\"resources\",{},\"pageMeta\",{\"_23\":24,\"_25\":26,\"_27\":28,\"_29\":26,\"_30\":-7,\"_31\":26,\"_32\":-7,\"_33\":26,\"_34\":35},\"title\",\"Kalkulačka pro rentu\",\"description\",\"\",\"excludePageFromSearch\",true,\"language\",\"socialImageAssetName\",\"socialImageUrl\",\"status\",\"redirect\",\"custom\",[],\"actionData\",\"errors\"]\n");</script><!--$--><script>window.__reactRouterContext.streamController.close();</script><!--/$--><!--/$--><script>$RC=function(b,c,e){c=document.getElementById(c);c.parentNode.removeChild(c);var a=document.getElementById(b);if(a){b=a.previousSibling;if(e)b.data="$!",a.setAttribute("data-dgst",e);else{e=b.parentNode;a=b.nextSibling;var f=0;do{if(a&&8===a.nodeType){var d=a.data;if("/$"===d)if(0===f)break;else f--;else"$"!==d&&"$?"!==d&&"$!"!==d||f++}d=a.nextSibling;e.removeChild(a);a=d}while(a);for(;c.firstChild;)e.insertBefore(c.firstChild,a);b.data="$"}b._reactRetry&&b._reactRetry()}};$RC("B:0","S:0")</script><script>$RC("B:1","S:1")</script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

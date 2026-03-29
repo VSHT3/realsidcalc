@@ -1,0 +1,273 @@
+---
+const { currentPath = '/' } = Astro.props;
+const isProducts = currentPath.startsWith('/produkty');
+const isCalc = currentPath.startsWith('/financne-kalkulacky');
+---
+<nav class="nav-embed">
+  <a href="/" class="nav-logo" aria-label="Domů">
+    <img src="https://assets.kovacsebastian.com/transpfavicon.png" alt="Sebastián Kováč" />
+  </a>
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="/" class:list={["nav-link", currentPath === '/' && 'active']}>O Mně</a></li>
+      <li class="nav-dropdown-wrap">
+        <span class:list={["nav-link","nav-trigger", isCalc && 'active']} data-link-path="/financne-kalkulacky" aria-haspopup="true">
+          <span class="trigger-label">Finanční Kalkulačky</span>
+          <span class="caret-wrap" aria-hidden="true">
+            <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </span>
+        <div class="nav-dropdown">
+          <a href="/financne-kalkulacky/investicna-kalkulacka" class="nav-dropdown-link">Kalkulačka Investic</a>
+          <a href="/financne-kalkulacky/kolik-investovat-mesicne" class="nav-dropdown-link">Měsíční Investice pro Cíl</a>
+          <a href="/financne-kalkulacky/kalkulacka-pro-rentu" class="nav-dropdown-link">Renta</a>
+          <a href="/financne-kalkulacky/kalkulacka-inflace" class="nav-dropdown-link">Kalkulačka Inflace</a>
+        </div>
+      </li>
+      <li><a href="/financni-diagnostika" class:list={["nav-link", currentPath === '/financni-diagnostika' && 'active']}>Finanční Diagnostika</a></li>
+      <li class="nav-dropdown-wrap">
+        <span class:list={["nav-link","nav-trigger", isProducts && 'active']} data-link-path="/produkty" aria-haspopup="true">
+          <span class="trigger-label">Produkty</span>
+          <span class="caret-wrap" aria-hidden="true">
+            <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </span>
+        <div class="nav-dropdown">
+          <a href="/produkty/investice" class="nav-dropdown-link">Investice</a>
+          <a href="/produkty/penzijni-sporeni" class="nav-dropdown-link">Penzijní Spoření</a>
+          <a href="/produkty/uvery" class="nav-dropdown-link">Úvěry</a>
+          <a href="/produkty/pojisteni" class="nav-dropdown-link">Pojištění</a>
+        </div>
+      </li>
+      <li><a href="/zamestnanecke-benefity" class:list={["nav-link", currentPath === '/zamestnanecke-benefity' && 'active']}>Zaměstnanecké Benefity</a></li>
+      <li><a href="/investovani-do-nemovitosti" class:list={["nav-link", currentPath === '/investovani-do-nemovitosti' && 'active']}>Investování do Nemovitostí</a></li>
+      <li><a href="/automatizace-firemnich-procesu" class:list={["nav-link", currentPath === '/automatizace-firemnich-procesu' && 'active']}>Automatizace Firemních Procesů</a></li>
+      <li><a href="/likvidace-pojistnych-udalosti" class:list={["nav-link", currentPath === '/likvidace-pojistnych-udalosti' && 'active']}>Likvidace Pojistných Událostí</a></li>
+    </ul>
+  </div>
+</nav>
+<style>
+  .nav-embed {
+    background: #faf9f7;
+    border-bottom: 1px solid #e8e4df;
+    padding: 0 clamp(16px, 3vw, 40px);
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    z-index: 1000;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: clamp(28px, 4vw, 52px);
+    box-sizing: border-box;
+  }
+  @media (min-width: 1470px) {
+    .nav-inner { max-width: 1920px; }
+  }
+  .nav-logo {
+    position: absolute;
+    left: clamp(16px, 3vw, 40px);
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    line-height: 0;
+    flex-shrink: 0;
+  }
+  .nav-logo img {
+    height: 28px;
+    width: auto;
+    display: block;
+  }
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(16px, 2.2vw, 40px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+  }
+  .nav-embed .nav-links li { white-space: nowrap; justify-self: center; }
+  .nav-embed .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: transparent;
+    background: linear-gradient(to right, #7d6b5a 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: background-position 0.3s ease;
+    display: inline-block;
+    position: relative;
+  }
+  .nav-embed .nav-link:hover { background-position: 0 0; }
+  .nav-embed .nav-link.active { background-position: 0 0; }
+  .nav-embed .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left center;
+    height: 1.5px;
+    background: #7d6b5a;
+    transition: transform 0.3s ease;
+  }
+  .nav-embed .nav-link:hover::after,
+  .nav-embed .nav-link.active::after { transform: scaleX(1); }
+  /* Dropdown trigger: row layout like inspiration; gradient only on text, not SVG. */
+  .nav-embed .nav-trigger.nav-link {
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    color: inherit;
+  }
+  .nav-embed .nav-trigger .trigger-label {
+    display: inline;
+    flex: 0 1 auto;
+    font-size: 15px;
+    font-weight: 500;
+    color: transparent;
+    background: linear-gradient(to right, #7d6b5a 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 0.04em;
+    transition: background-position 0.3s ease;
+  }
+  .nav-embed .nav-trigger:hover .trigger-label,
+  .nav-embed .nav-trigger.active .trigger-label {
+    background-position: 0 0;
+  }
+  /* Same pattern as inspiration: label + chevron in one row (flex items-center gap-1). */
+  .nav-embed .nav-trigger {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    line-height: 1.2;
+  }
+  .nav-embed .caret-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 12px;
+    height: 12px;
+    color: #7d6b5a;
+    pointer-events: none;
+  }
+  .nav-embed .caret {
+    display: block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.2s ease;
+    opacity: 0.95;
+  }
+  .nav-embed .nav-dropdown-wrap {
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: -12px;
+  }
+  .nav-embed .nav-dropdown-wrap::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 14px;
+  }
+  .nav-embed .nav-dropdown {
+    position: absolute;
+    top: calc(100%);
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px) scale(0.98);
+    transform-origin: top center;
+    min-width: 200px;
+    padding: 10px 0;
+    background: #fff;
+    border: 1px solid #e8e4df;
+    border-radius: 6px;
+    box-shadow: 0 8px 32px rgba(61,44,41,0.08);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0.28s;
+    z-index: 1001;
+  }
+  .nav-embed .nav-dropdown-wrap:hover .nav-dropdown,
+  .nav-embed .nav-dropdown-wrap:focus-within .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+  .nav-embed .nav-dropdown-wrap:hover .caret,
+  .nav-embed .nav-dropdown-wrap:focus-within .caret {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  .nav-embed .nav-dropdown-link {
+    display: block;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: background 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+  }
+  .nav-embed .nav-dropdown-link:hover {
+    background: #f8f6f3;
+    color: #7d6b5a;
+  }
+  @media (max-width: 1180px) {
+    .nav-embed {
+      height: 100px;
+      align-items: center;
+    }
+    .nav-logo img {
+      height: 36px;
+    }
+    .nav-links {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(2, auto);
+      justify-content: center;
+      align-content: center;
+      column-gap: 24px;
+      row-gap: 10px;
+    }
+    .nav-embed .nav-links li {
+      justify-self: center;
+    }
+    .nav-embed .nav-link { font-size: 14px; }
+    .nav-embed .nav-trigger .trigger-label { font-size: 14px; }
+  }
+</style>

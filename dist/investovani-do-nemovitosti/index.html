@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="cs"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Investování do Nemovitostí</title><link rel="stylesheet" href="/_astro/BaseLayout.TYkhYPZ2.css">
+<link rel="stylesheet" href="/_astro/investovani-do-nemovitosti@_@astro.CNBGEPah.css"></head> <body> <nav class="nav-embed" data-astro-cid-dmqpwcec> <a href="/" class="nav-logo" aria-label="Domů" data-astro-cid-dmqpwcec> <img src="https://assets.kovacsebastian.com/transpfavicon.png" alt="Sebastián Kováč" data-astro-cid-dmqpwcec> </a> <div class="nav-inner" data-astro-cid-dmqpwcec> <ul class="nav-links" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec><a href="/" class="nav-link" data-astro-cid-dmqpwcec>O Mně</a></li> <li class="nav-dropdown-wrap" data-astro-cid-dmqpwcec> <span class="nav-link nav-trigger" data-link-path="/financne-kalkulacky" aria-haspopup="true" data-astro-cid-dmqpwcec> <span class="trigger-label" data-astro-cid-dmqpwcec>Finanční Kalkulačky</span> <span class="caret-wrap" aria-hidden="true" data-astro-cid-dmqpwcec> <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-astro-cid-dmqpwcec> <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dmqpwcec></path> </svg> </span> </span> <div class="nav-dropdown" data-astro-cid-dmqpwcec> <a href="/financne-kalkulacky/investicna-kalkulacka" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Kalkulačka Investic</a> <a href="/financne-kalkulacky/kolik-investovat-mesicne" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Měsíční Investice pro Cíl</a> <a href="/financne-kalkulacky/kalkulacka-pro-rentu" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Renta</a> <a href="/financne-kalkulacky/kalkulacka-inflace" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Kalkulačka Inflace</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/financni-diagnostika" class="nav-link" data-astro-cid-dmqpwcec>Finanční Diagnostika</a></li> <li class="nav-dropdown-wrap" data-astro-cid-dmqpwcec> <span class="nav-link nav-trigger" data-link-path="/produkty" aria-haspopup="true" data-astro-cid-dmqpwcec> <span class="trigger-label" data-astro-cid-dmqpwcec>Produkty</span> <span class="caret-wrap" aria-hidden="true" data-astro-cid-dmqpwcec> <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-astro-cid-dmqpwcec> <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dmqpwcec></path> </svg> </span> </span> <div class="nav-dropdown" data-astro-cid-dmqpwcec> <a href="/produkty/investice" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Investice</a> <a href="/produkty/penzijni-sporeni" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Penzijní Spoření</a> <a href="/produkty/uvery" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Úvěry</a> <a href="/produkty/pojisteni" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Pojištění</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/zamestnanecke-benefity" class="nav-link" data-astro-cid-dmqpwcec>Zaměstnanecké Benefity</a></li> <li data-astro-cid-dmqpwcec><a href="/investovani-do-nemovitosti" class="nav-link active" data-astro-cid-dmqpwcec>Investování do Nemovitostí</a></li> <li data-astro-cid-dmqpwcec><a href="/automatizace-firemnich-procesu" class="nav-link" data-astro-cid-dmqpwcec>Automatizace Firemních Procesů</a></li> <li data-astro-cid-dmqpwcec><a href="/likvidace-pojistnych-udalosti" class="nav-link" data-astro-cid-dmqpwcec>Likvidace Pojistných Událostí</a></li> </ul> </div> </nav> <main>  <div class="nemovitosti-page"><div class="scroll-progress" id="scrollProgress"></div>
+
+<div class="ambient-layer" aria-hidden="true">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="ambient-grid" aria-hidden="true"></div>
+<div class="ambient-vignette" aria-hidden="true"></div>
+<div class="interactive-background" id="interactiveBackground" aria-hidden="true"></div>
+
+<div class="floating-particles" aria-hidden="true">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div class="house-container" id="houseLeft"></div>
+<div class="house-container" id="houseRight"></div>
+
+<div class="main-wrapper">
+<div class="page-shell">
+
+  <div class="hero inv-section">
+    <div class="hero-title">Investování do nemovitostí</div>
+    <div class="hero-line"></div>
+  </div>
+
+  <div class="inv-section inv-delay-1 content-flex">
+    <div class="intro-text reveal-on-scroll">
+      <p>S klienty často řeším také investování do nemovitostí. Ať už je to v rámci diverzifikace rizika v jejich již aktivních investičních portfoliích, nebo osobní investice spočívající ve změně z nájemního bydlení na bydlení ve vlastním.</p>
+      <p>V často komplikovaných případech hledání investičních nemovitostí se dnes člověk na obzvlášť přeplněném českém trhu může ztratit. Sám jsem to zažil, a tak jako moji klienti vyhledávají pomoc ode mě, jsem já vyhledal pomoc dnes již kamaráda, se kterým v této oblasti nadále spolupracuji:</p>
+      <div class="partner-name">Janem Krupičkou</div>
+    </div>
+
+    <div class="intro-photo-wrap reveal-on-scroll">
+      <div class="intro-photo" id="introPhoto">
+        <img src="https://assets.kovacsebastian.com/krupica.webp" alt="Jan Krupička">
+      </div>
+    </div>
+  </div>
+
+  <div class="spoluprace-section reveal-on-scroll">
+    <div class="inv-card">
+      <div style="text-align:center;">
+        <div class="section-icon" aria-hidden="true">
+          <img src="https://via.placeholder.com/120x120.png?text=ICON" alt="Spolupráce icon">
+        </div>
+
+        <div class="section-title">
+          Spolupráce
+          <div class="line"></div>
+        </div>
+
+        <p class="section-copy">
+          Já se starám o financování a celkovou finanční strukturu.
+          Honza řeší vyhledání investiční nemovitosti, prohlídky a vyjednávání ceny.
+        </p>
+
+        <div class="review-box">
+          <div class="review-title">Recenze klientů Jana Krupičky</div>
+          <div class="review-subtitle">Spokojenost jeho klientů si můžete ověřit zde:</div>
+
+          <a href="https://www.google.com/maps?q=Jan+Krupička+-+realitní+makléř+Brno,+Bednaříkova,+628+00+Brno-Líšeň&amp;ftid=0x4712eb6b46573ccf:0x96c40daeb94232e&amp;entry=gps&amp;g_st=ic" target="_blank" rel="noopener noreferrer" class="review-button">
+            <span>Zobrazit Google recenze</span>
+            <svg viewBox="0 0 24 24">
+              <path d="M7 17 17 7"></path>
+              <path d="M8 7h9v9"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-section inv-section inv-delay-3 reveal-on-scroll">
+    <div class="contact-heading">Kontakt</div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-name">Sebastián Kováč</div>
+
+        <div class="contact-item">
+          <div class="contact-icon-wrap">
+            <img src="https://i.postimg.cc/PqqZsVk5/Chat-GPT-Image-Feb-28-2026-08-53-17-PM.png" class="contact-icon" alt="Tel">
+          </div>
+          <div class="contact-info"><a href="tel:+420771516683">+420 771 516 683</a></div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-wrap">
+            <img src="https://i.postimg.cc/pLRzkXG5/Chat-GPT-Image-Feb-28-2026-08-53-21-PM.png" class="contact-icon" alt="Mail">
+          </div>
+          <div class="contact-info"><a href="mailto:sebastian.kovac@smsfinance.cz">sebastian.kovac@smsfinance.cz</a></div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-name">Jan Krupička</div>
+
+        <div class="contact-item">
+          <div class="contact-icon-wrap">
+            <img src="https://i.postimg.cc/PqqZsVk5/Chat-GPT-Image-Feb-28-2026-08-53-17-PM.png" class="contact-icon" alt="Tel">
+          </div>
+          <div class="contact-info"><a href="tel:+420604192147">+420 604 192 147</a></div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-wrap">
+            <img src="https://i.postimg.cc/pLRzkXG5/Chat-GPT-Image-Feb-28-2026-08-53-21-PM.png" class="contact-icon" alt="Mail">
+          </div>
+          <div class="contact-info"><a href="mailto:jan.krupicka@smsreality.cz">jan.krupicka@smsreality.cz</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>  </main> <footer class="footer-embed" data-astro-cid-sz7xmlte> <div class="footer-inner" data-astro-cid-sz7xmlte> <div class="footer-row" data-astro-cid-sz7xmlte> <div class="footer-main" data-astro-cid-sz7xmlte> <a href="/" class="footer-logo-link" aria-label="Domů" data-astro-cid-sz7xmlte> <img src="https://assets.kovacsebastian.com/transpfavicon.png" alt="Sebastián Kováč" class="footer-logo" data-astro-cid-sz7xmlte> </a> <div class="footer-name" data-astro-cid-sz7xmlte>Sebastián Kováč</div> <div class="footer-tagline" data-astro-cid-sz7xmlte>Finanční poradenství a investice</div> <div class="footer-contact" data-astro-cid-sz7xmlte> <a href="tel:+420771516683" class="footer-contact-link" data-astro-cid-sz7xmlte>+420 771 516 683</a> <a href="mailto:sebastian.kovac@smsfinance.cz" class="footer-contact-link" data-astro-cid-sz7xmlte>sebastian.kovac@smsfinance.cz</a> <a href="https://www.linkedin.com/in/sebasti%C3%A1n-kov%C3%A1%C4%8D-240530321/" class="footer-contact-link" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte>LinkedIn</a> </div> </div> <div class="footer-map-wrap" data-astro-cid-sz7xmlte> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d652.0728525897156!2d16.605030069661147!3d49.17605667494077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129507feac52ad%3A0x5b858fd3dbffa63!2sPra%C5%BE%C3%A1kova%201008%2F69%2C%20639%2000%20Brno-jih%2C%20Czechia!5e0!3m2!1sen!2ses!4v1772108890025!5m2!1sen!2ses" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - Pražákova 1008/69, Brno" data-astro-cid-sz7xmlte></iframe> </div> <nav class="footer-links" data-astro-cid-sz7xmlte> <a href="/" class="footer-link" data-astro-cid-sz7xmlte>O Mně</a> <a href="/financne-kalkulacky/investicna-kalkulacka" class="footer-link" data-astro-cid-sz7xmlte>Finanční Kalkulačky</a> <a href="/financni-diagnostika" class="footer-link" data-astro-cid-sz7xmlte>Finanční Diagnostika</a> <a href="/produkty/investice" class="footer-link" data-astro-cid-sz7xmlte>Produkty</a> <a href="/zamestnanecke-benefity" class="footer-link" data-astro-cid-sz7xmlte>Zaměstnanecké Benefity</a> <a href="/investovani-do-nemovitosti" class="footer-link" data-astro-cid-sz7xmlte>Investování do Nemovitostí</a> <a href="/automatizace-firemnich-procesu" class="footer-link" data-astro-cid-sz7xmlte>Automatizace Firemních Procesů</a> <a href="/likvidace-pojistnych-udalosti" class="footer-link" data-astro-cid-sz7xmlte>Likvidace Pojistných Událostí</a> </nav> </div> <div class="footer-bottom" data-astro-cid-sz7xmlte> <div class="footer-copy" data-astro-cid-sz7xmlte>© <span id="footer-year" data-astro-cid-sz7xmlte></span> Sebastián Kováč</div> </div> </div> </footer> <script type="module">(function(){var e=document.getElementById("footer-year");e&&(e.textContent=new Date().getFullYear())})();</script> </body></html> <script>
+  (() => {
+    const page = document.querySelector('.nemovitosti-page');
+    if (!page) return;
+
+    const assetsBase = 'https://assets.kovacsebastian.com/';
+    const houseFiles = ['domcek1.svg', 'domcek2.svg', 'domcek3.svg', 'domcek4.svg', 'domcek5.webp'];
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    const shuffledHouses = shuffleArray([...houseFiles]);
+    const hLeft = page.querySelector('#houseLeft');
+    const hRight = page.querySelector('#houseRight');
+    const progressBar = page.querySelector('#scrollProgress');
+    const introPhoto = page.querySelector('#introPhoto');
+
+    function createImg(src, alt) {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = alt;
+      img.onerror = function () {
+        this.src = assetsBase + 'domcek1.svg';
+        this.onerror = null;
+      };
+      return img;
+    }
+
+    if (hLeft && !hLeft.hasChildNodes()) {
+      hLeft.appendChild(createImg(assetsBase + shuffledHouses[0], 'House Left'));
+    }
+
+    if (hRight && !hRight.hasChildNodes()) {
+      hRight.appendChild(createImg(assetsBase + shuffledHouses[1], 'House Right'));
+    }
+
+    function handleScroll() {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPerc = docHeight > 0 ? window.scrollY / docHeight : 0;
+      const moveRange = Math.min(window.innerWidth * 0.24, 340);
+      const floatOffset = Math.sin(scrollPerc * Math.PI * 3) * 18;
+      const rotateLeft = scrollPerc * -8;
+      const rotateRight = scrollPerc * 8;
+
+      if (hLeft)
+        hLeft.style.transform = `translateX(${-moveRange * scrollPerc}px) translateY(${floatOffset}px) rotate(${rotateLeft}deg)`;
+      if (hRight)
+        hRight.style.transform = `translateX(${moveRange * scrollPerc}px) translateY(${-floatOffset}px) rotate(${rotateRight}deg)`;
+
+      const baseOpacity = window.innerWidth <= 768 ? 0.1 : 0.18;
+      const fadeFactor = 1 - Math.min(scrollPerc * 0.35, 0.35);
+
+      if (hLeft) hLeft.style.opacity = (baseOpacity * fadeFactor).toFixed(3);
+      if (hRight) hRight.style.opacity = (baseOpacity * fadeFactor).toFixed(3);
+      if (progressBar) progressBar.style.width = `${scrollPerc * 100}%`;
+    }
+
+    function handleMouseMove(e) {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      page.style.setProperty('--mouse-x', `${x}%`);
+      page.style.setProperty('--mouse-y', `${y}%`);
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll);
+    window.addEventListener('mousemove', handleMouseMove);
+    handleScroll();
+
+    const revealItems = page.querySelectorAll('.reveal-on-scroll');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      },
+      { threshold: 0.16 }
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+
+    if (introPhoto && window.innerWidth > 1024) {
+      introPhoto.addEventListener('mousemove', (e) => {
+        const rect = introPhoto.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const rotateY = (x / rect.width - 0.5) * 6;
+        const rotateX = (y / rect.height - 0.5) * -5;
+
+        introPhoto.style.transform = `translateY(-8px) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.01)`;
+      });
+
+      introPhoto.addEventListener('mouseleave', () => {
+        introPhoto.style.transform = '';
+      });
+    }
+  })();
+</script>

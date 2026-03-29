@@ -1,0 +1,12 @@
+@import './tokens.css';
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.7;
+}
+a { color: inherit; }
+main { min-height: 60vh; }

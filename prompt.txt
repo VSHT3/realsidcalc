@@ -1,0 +1,1 @@
+this is my current html. I'd liek to better organize and optimize it. which files should be moved or deleted or merged? I want my project to be modern and use Astro. should there be only one global CSS file? what other things should be changed or added? do you have any other notes?

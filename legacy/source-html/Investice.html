@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="" data-ws-project="1d3e2b47-51da-4c98-802f-121e1e17c30b" data-ws-last-published="2026-03-23T18:27:01.356Z"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://kovacsebastian.com/_image/w_144,q_100/assets/frfavicon_jlFFLMT_V1Mk6uXTW1p2Q.png"><link rel="modulepreload" href="https://kovacsebastian.com/assets/entry.client-DAnfYBe0.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/chunk-LFPYN7LY-KO6my5NK.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/root-CKNBTVqL.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/_index-D4jCT0wn.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/components-BIsCsZWf.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/_produkty_._investice_._index-ODusATsk.js"><link rel="modulepreload" href="https://kovacsebastian.com/assets/index-BVj1Hbq_.js"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Sebastián Kováč","url":"https://kovacsebastian.com"}</script><link rel="stylesheet" href="Investice_files/index-PYqb4Xo0.css"><meta property="og:url" content="https://kovacsebastian.com/produkty/investice"><meta property="og:title" content="Investice"><meta property="og:type" content="website"><meta property="og:site_name" content="Sebastián Kováč"><meta property="twitter:card" content="summary_large_image"><title>Investice</title></head><body class="w-element c1iu6s88" data-new-gr-c-s-check-loaded="8.936.0" data-gr-ext-installed=""><div style="display:contents"><div style="display:contents"><div class="w-html-embed"><nav class="nav-embed">
+    <a href="https://kovacsebastian.com/" class="nav-logo" aria-label="Domů">
+      <img src="Investice_files/transpfavicon.png" alt="Sebastián Kováč">
+    </a>
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="https://kovacsebastian.com/" class="nav-link">O Mně</a></li>
+        <li class="nav-dropdown-wrap">
+          <span class="nav-link nav-trigger" data-link-path="/financne-kalkulacky" aria-haspopup="true">Finanční Kalkulačky</span>
+          <div class="nav-dropdown">
+            <a href="https://kovacsebastian.com/financne-kalkulacky/investicna-kalkulacka" class="nav-dropdown-link">Kalkulačka Investic</a>
+            <a href="https://kovacsebastian.com/financne-kalkulacky/kolik-investovat-mesicne" class="nav-dropdown-link">Měsíční Investice pro Cíl</a>
+            <a href="https://kovacsebastian.com/financne-kalkulacky/kalkulacka-pro-rentu" class="nav-dropdown-link">Renta</a>
+            <a href="https://kovacsebastian.com/financne-kalkulacky/kalkulacka-inflace" class="nav-dropdown-link">Kalkulačka Inflace</a>
+          </div>
+        </li>
+        <li><a href="https://kovacsebastian.com/financni-diagnostika" class="nav-link">Finanční Diagnostika</a></li>
+        <li class="nav-dropdown-wrap">
+          <span class="nav-link nav-trigger active" data-link-path="/produkty" aria-haspopup="true">Produkty</span>
+          <div class="nav-dropdown">
+            <a href="https://kovacsebastian.com/produkty/investice" class="nav-dropdown-link">Investice</a>
+            <a href="https://kovacsebastian.com/produkty/penzijni-sporeni" class="nav-dropdown-link">Penzijní Spoření</a>
+            <a href="https://kovacsebastian.com/produkty/uvery" class="nav-dropdown-link">Úvěry</a>
+            <a href="https://kovacsebastian.com/produkty/pojisteni" class="nav-dropdown-link">Pojištění</a>
+          </div>
+        </li>
+        <li><a href="https://kovacsebastian.com/zamestnanecke-benefity" class="nav-link">Zaměstnanecké Benefity</a></li>
+        <li><a href="https://kovacsebastian.com/investovani-do-nemovitosti" class="nav-link">Investování do Nemovitostí</a></li>
+        <li><a href="https://kovacsebastian.com/automatizace-firemnich-procesu" class="nav-link">Automatizace Firemních Procesů</a></li>
+        <li><a href="https://kovacsebastian.com/likvidace-pojistnych-udalosti" class="nav-link">Likvidace Pojistných Událostí</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <style>
+    .nav-embed {
+      background: #faf9f7;
+      border-bottom: 1px solid #e8e4df;
+      padding: 0 clamp(16px, 3vw, 40px);
+      font-family: 'Times New Roman', Times, serif;
+      position: relative;
+      z-index: 1000;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      box-sizing: border-box;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      padding-left: clamp(28px, 4vw, 52px);
+      box-sizing: border-box;
+    }
+    @media (min-width: 1470px) {
+      .nav-inner { max-width: 1920px; }
+    }
+    .nav-logo {
+      position: absolute;
+      left: clamp(16px, 3vw, 40px);
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      line-height: 0;
+      flex-shrink: 0;
+    }
+    .nav-logo img {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+    .nav-links {
+      display: grid;
+      grid-template-columns: repeat(8, auto);
+      grid-template-rows: 1fr;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(16px, 2.2vw, 40px);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      white-space: nowrap;
+    }
+    .nav-links li { white-space: nowrap; justify-self: center; }
+    .nav-link {
+      font-size: 15px;
+      font-weight: 500;
+      color: transparent;
+      background: linear-gradient(to right, #7d6b5a 50%, #000 50%);
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: background-position 0.3s ease;
+      display: inline-block;
+      position: relative;
+    }
+    .nav-link:hover { background-position: 0 0; }
+    .nav-link.active { background-position: 0 0; }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #7d6b5a;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after { width: 100%; }
+    .nav-trigger {
+      cursor: pointer;
+    }
+    .nav-dropdown-wrap {
+      position: relative;
+    }
+    .nav-dropdown {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%) translateY(-6px);
+      min-width: 200px;
+      padding: 10px 0;
+      background: #fff;
+      border: 1px solid #e8e4df;
+      border-radius: 6px;
+      box-shadow: 0 8px 32px rgba(61,44,41,0.08);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+      z-index: 1001;
+    }
+    .nav-dropdown-wrap:hover .nav-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+    .nav-dropdown-link {
+      display: block;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: background 0.2s ease, color 0.2s ease;
+      white-space: nowrap;
+    }
+    .nav-dropdown-link:hover {
+      background: #f8f6f3;
+      color: #7d6b5a;
+    }
+    /* Wrapped state: two lines, 4 links per line, fixed height, bigger logo */
+    @media (max-width: 1180px) {
+      .nav-embed {
+        height: 100px;
+        align-items: center;
+      }
+      .nav-logo img {
+        height: 36px;
+      }
+      .nav-links {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+        align-content: center;
+        column-gap: 24px;
+        row-gap: 10px;
+      }
+      .nav-links li {
+        justify-self: center;
+      }
+      .nav-link { font-size: 14px; }
+    }
+  </style>
+  <script>
+    (function() {
+      var path = window.location.pathname.replace(/\/$/, '') || '/';
+      var nav = document.querySelector('.nav-embed');
+      if (!nav) return;
+      var links = nav.querySelectorAll('.nav-link');
+      links.forEach(function(link) {
+        link.classList.remove('active');
+        var href = link.getAttribute('href') || link.getAttribute('data-link-path') || '';
+        var linkPath = href.replace(/\/$/, '') || '/';
+        if (path === linkPath) {
+          link.classList.add('active');
+          return;
+        }
+        if (linkPath === '/financne-kalkulacky' && (path === '/financne-kalkulacky' || path.indexOf('/financne-kalkulacky/') === 0 || path === '/target-investment-calc' || path === '/pension-calc')) {
+          link.classList.add('active');
+        }
+        if (linkPath === '/produkty' && (path === '/produkty' || path.indexOf('/produkty/') === 0)) {
+          link.classList.add('active');
+        }
+      });
+    })();
+  </script>
+  </div></div></div><div class="w-html-embed"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+body{margin:0;font-family:'Times New Roman',Georgia,serif;background:#f8f6f3;color:#1a1a1a;line-height:1.9;letter-spacing:.02em;}
+.inv-fade{opacity:0;transform:translateY(40px);filter:blur(6px);animation:invFade 1.4s cubic-bezier(.22,.61,.36,1) forwards;}
+.inv-delay-1{animation-delay:.2s;}.inv-delay-2{animation-delay:.4s;}.inv-delay-3{animation-delay:.6s;}.inv-delay-4{animation-delay:.8s;}.inv-delay-5{animation-delay:1s;}
+@keyframes invFade{to{opacity:1;transform:translateY(0);filter:blur(0);}}
+.inv-number{font-size:40px;color:#5c4a3d;font-weight:600;letter-spacing:.05em;}
+.inv-number span{font-variant-numeric:tabular-nums;}
+.inv-card{padding:32px;background:#fff;border-radius:10px;border-top:3px solid #5c4a3d;transition:all .45s cubic-bezier(.22,.61,.36,1);}
+.inv-card:hover{transform:translateY(-8px);box-shadow:0 16px 40px rgba(61,44,41,.18);}
+.inv-section{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-bottom:100px;}
+@media(max-width:640px){.inv-section{grid-template-columns:1fr;}}
+.inv-section h4{margin-bottom:10px;color:#5c4a3d;font-size:20px;}
+.inv-section p{margin:0;font-size:16px;color:#3d3d3d;text-align:justify;}
+.graph-container{position:relative;width:100%;height:200px;margin-bottom:60px;background:#e8e4df;border-radius:8px;overflow:hidden;}
+.graph-bar{position:absolute;bottom:0;width:50px;background:#5c4a5d;border-radius:4px;height:0;transition:height 1.2s cubic-bezier(.22,.61,.36,1);}
+.graph-bar:nth-child(1){left:8%;} .graph-bar:nth-child(2){left:20%;}
+.graph-bar:nth-child(3){left:32%;} .graph-bar:nth-child(4){left:44%;}
+.graph-bar:nth-child(5){left:56%;} .graph-bar:nth-child(6){left:68%;}
+.graph-bar:nth-child(7){left:80%;}
+.graph-x{position:absolute;bottom:0;width:100%;height:2px;background:#ccc;}
+.graph-y{position:absolute;left:0;top:0;width:2px;height:100%;background:#ccc;}
+</style>
+
+<div style="max-width:1100px;margin:0 auto;padding:80px 28px;position:relative;">
+<div class="inv-fade" style="margin-bottom:60px;text-align:center;">
+  <div style="font-size:50px;font-weight:500;margin-bottom:12px;color:#2d2d2d;"><b>Investice</b></div>
+  <div style="font-size:18px;color:#7a6a5d;margin-bottom:6px;"><b>Majetek pod správou (AUM)</b></div>
+  <div class="inv-number"><span id="aum-counter" data-target="4250000">4,250,000</span> Kč +</div>
+</div>
+
+<div class="inv-fade inv-delay-1" style="margin-bottom:40px;font-size:18px;text-align:justify;max-width:900px;margin-left:auto;margin-right:auto;"><b>Investování je moje nejoblíbenější část práce, umožňuje mi přímo vidět pozitivní změny životních situací klientů v čase. Právě proto se tomuto tématu věnuji i ve volném čase, ať už na vysoké škole, kde o něm píši závěrečnou práci, nebo prostřednictvím vlastních analýz. Plán investování se odvíjí od cílů jednotlivce a jeho aktuální životní situace, proto je důležité mít jasný plán a individuální nastavení. S klienty nejprve probírám jejich finanční cíle, potřeby, aktuální situaci a toleranci k riziku a potom nastavujeme zpravidla následující oblasti:</b></div>
+
+<div class="inv-fade inv-delay-2 graph-container">
+  <div class="graph-bar" data-height="40%" style="height: 40%;"></div>
+  <div class="graph-bar" data-height="55%" style="height: 55%;"></div>
+  <div class="graph-bar" data-height="70%" style="height: 70%;"></div>
+  <div class="graph-bar" data-height="50%" style="height: 50%;"></div>
+  <div class="graph-bar" data-height="80%" style="height: 80%;"></div>
+  <div class="graph-bar" data-height="60%" style="height: 60%;"></div>
+  <div class="graph-bar" data-height="75%" style="height: 75%;"></div>
+  <div class="graph-x"></div>
+  <div class="graph-y"></div>
+</div>
+
+<div class="inv-fade inv-delay-3 inv-section">
+  <div class="inv-card"><h4>Krátkodobá rezerva</h4><p><b>S klienty, kteří nemají vybudovanou finanční rezervu, řešíme nejprve, kde a jak ji vybudovat, a poté, kde ji uložit, aby byla vždy po ruce v případě nouze.</b></p></div>
+  <div class="inv-card"><h4>Vlastní zdroje pro hypotéku a vlastní bydlení</h4><p><b>V rámci snu o vlastním bydlení s klienty řeším naspoření 10–20 % hodnoty nemovitosti pro možnost získat hypotéku.</b></p></div>
+  <div class="inv-card"><h4>Krátkodobé cíle</h4><p><b>Pomáhám klientům naplnit krátkodobé cíle jako auto, rekonstrukce domu či dovolená. Určíme mantinely investování a vybereme vhodné, nejčastěji střednědobé investiční nástroje k dosažení cíle.</b></p></div>
+  <div class="inv-card"><h4>Spoření pro děti na studium</h4><p><b>Pro děti klientů zakládáme pravidelné dlouhodobé investice, které jsou určeny na studium či start do života.</b></p></div>
+  <div class="inv-card"><h4>Renta (finanční nezávislost)</h4><p><b>Nastavujeme plán na vytvoření dostatečného množství aktiv pro čerpání doživotní renty od klientem požadovaného věku po zbytek života.</b></p></div>
+  <div class="inv-card"><h4>Firemní / Obecní investice</h4><p><b>Mnoho obcí či firem má své naspořené peníze na běžných nebo spořicích účtech. S institucionálními investory často řešíme konzervativní investice pro uchování hodnoty větších objemů kapitálu.</b></p></div>
+  <div class="inv-card"><h4>DIP (dlouhodobý investiční produkt)</h4><p><b>V rámci investování s dlouhým horizontem pracuji často s produktem DIP, který umožňuje daňové odpočty již od první investované koruny.</b></p></div>
+  <div class="inv-card"><h4>Další služby</h4><p><b>Pro klienta kombinace možností a tipů z předchozích sekcí, aby byl plán investic kompletní a symetrický.</b></p></div>
+</div>
+
+<div class="inv-fade inv-delay-5" style="margin-top:40px;text-align:center;">
+  <div class="inv-card" style="padding:50px;background:#ffffff;border-left:5px solid #5c4a3d;">
+    <div style="font-size:23px;color:#2d2d2d;"><b>Investování je proces, nikoli jednorázové rozhodnutí.</b></div>
+    <div style="margin-top:18px;font-size:18px;color:#5c4a3d;"><b>Disciplína, dlouhodobý horizont a správně nastavená strategie jsou základem úspěchu.</b></div>
+  </div>
+</div>
+</div>
+
+<script>
+function animateCounter(e){const t=+e.getAttribute("data-target"),d=3500,s=performance.now();function n(a){const r=Math.min((a-s)/d,1),o=1-Math.pow(1-r,3);e.textContent=Math.floor(o*t).toLocaleString();r<1&&requestAnimationFrame(n)}requestAnimationFrame(n)}
+window.addEventListener("load",function(){
+  animateCounter(document.getElementById("aum-counter"));
+  Array.from(document.querySelectorAll(".graph-bar")).forEach((e,i)=>setTimeout(()=>{e.style.height=e.getAttribute("data-height")},i*400));
+});
+</script></div><div style="display:contents"><div style="display:contents"><div class="w-html-embed"><footer class="footer-embed">
+  <div class="footer-inner">
+    <div class="footer-row">
+      <div class="footer-main">
+        <a href="https://kovacsebastian.com/" class="footer-logo-link" aria-label="Domů">
+          <img src="Investice_files/transpfavicon.png" alt="Sebastián Kováč" class="footer-logo">
+        </a>
+        <div class="footer-name">Sebastián Kováč</div>
+        <div class="footer-tagline">Finanční poradenství a investice</div>
+        <div class="footer-contact">
+          <a href="tel:+420771516683" class="footer-contact-link">+420 771 516 683</a>
+          <a href="mailto:sebastian.kovac@smsfinance.cz" class="footer-contact-link">sebastian.kovac@smsfinance.cz</a>
+          <a href="https://www.linkedin.com/in/sebasti%C3%A1n-kov%C3%A1%C4%8D-240530321/" class="footer-contact-link" target="_blank" rel="noopener noreferrer">LinkedIn profil</a>
+        </div>
+      </div>
+      <div class="footer-map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d652.0728525897156!2d16.605030069661147!3d49.17605667494077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129507feac52ad%3A0x5b858fd3dbffa63!2sPra%C5%BE%C3%A1kova%201008%2F69%2C%20639%2000%20Brno-jih%2C%20Czechia!5e0!3m2!1sen!2ses!4v1772108890025!5m2!1sen!2ses" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - Pražákova 1008/69, Brno"></iframe>
+      </div>
+      <nav class="footer-links">
+        <a href="https://kovacsebastian.com/" class="footer-link">O Mně</a>
+        <a href="https://kovacsebastian.com/financne-kalkulacky/investicna-kalkulacka" class="footer-link">Finanční Kalkulačky</a>
+        <a href="https://kovacsebastian.com/financni-diagnostika" class="footer-link">Finanční Diagnostika</a>
+        <a href="https://kovacsebastian.com/produkty/investice" class="footer-link">Produkty</a>
+        <a href="https://kovacsebastian.com/zamestnanecke-benefity" class="footer-link">Zaměstnanecké Benefity</a>
+        <a href="https://kovacsebastian.com/investovani-do-nemovitosti" class="footer-link">Investování do Nemovitostí</a>
+        <a href="https://kovacsebastian.com/automatizace-firemnich-procesu" class="footer-link">Automatizace Firemních Procesů</a>
+        <a href="https://kovacsebastian.com/likvidace-pojistnych-udalosti" class="footer-link">Likvidace Pojistných Událostí</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© <span id="footer-year">2026</span> Sebastián Kováč</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var y=document.getElementById("footer-year");
+  if(y)y.textContent=new Date().getFullYear();
+})();
+</script>
+
+<style>
+  /* Scoped to footer only so embed does not affect rest of site */
+  footer.footer-embed {
+    background: #faf9f7;
+    border-top: 1px solid #e8e4df;
+    padding: 48px clamp(24px, 5vw, 64px) 32px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative; /* ensure it layers above background circles */
+    z-index: 2;         /* ensures it’s in front of bg elements */
+  }
+  footer.footer-embed .footer-inner {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  footer.footer-embed .footer-row {
+    display: grid;
+    grid-template-columns: 1fr minmax(min(560px, 100%), auto) 1fr;
+    align-items: start;
+    gap: 48px 56px;
+    margin-bottom: 32px;
+  }
+  footer.footer-embed .footer-main {
+    min-width: 0;
+  }
+  footer.footer-embed .footer-map-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-width: min(560px, 100%);
+  }
+  footer.footer-embed .footer-map-wrap iframe {
+    width: 100% !important;
+    max-width: 560px !important;
+    height: 320px !important;
+    min-width: 0;
+    border-radius: 15px;
+    border: 2px solid #5c4a3d;
+    box-shadow: 0 2px 12px rgba(61,44,41,0.06);
+  }
+  footer.footer-embed .footer-logo-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: opacity 0.25s ease;
+  }
+  footer.footer-embed .footer-logo-link:hover {
+    opacity: 0.8;
+  }
+  footer.footer-embed .footer-logo {
+    display: block;
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+  }
+  footer.footer-embed .footer-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.03em;
+    margin-bottom: 4px;
+  }
+  footer.footer-embed .footer-tagline {
+    font-size: 14px;
+    color: #6b6b6b;
+    letter-spacing: 0.02em;
+  }
+  footer.footer-embed .footer-contact {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  footer.footer-embed .footer-contact-link {
+    font-size: 14px;
+    color: #6b6b6b;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.25s ease;
+  }
+  footer.footer-embed .footer-contact-link:hover {
+    color: #7d6b5a;
+  }
+  footer.footer-embed .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    text-align: right;
+  }
+  footer.footer-embed .footer-link {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.25s ease;
+  }
+  footer.footer-embed .footer-link:hover {
+    color: #7d6b5a;
+  }
+  @media (max-width: 992px) {
+    footer.footer-embed .footer-row {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "main map" "links links";
+    }
+    footer.footer-embed .footer-main { grid-area: main; }
+    footer.footer-embed .footer-map-wrap { grid-area: map; justify-content: flex-end; }
+    footer.footer-embed .footer-links { grid-area: links; justify-items: start; text-align: left; }
+  }
+  @media (max-width: 640px) {
+    footer.footer-embed .footer-row {
+      grid-template-columns: 1fr;
+      grid-template-areas: "main" "map" "links";
+    }
+    footer.footer-embed .footer-map-wrap { justify-content: center; }
+    footer.footer-embed .footer-map-wrap iframe { max-width: 100%; height: 240px; }
+    footer.footer-embed .footer-links {
+      align-items: flex-start;
+      text-align: left;
+      gap: 6px;
+    }
+  }
+  footer.footer-embed .footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid #e8e4df;
+  }
+  footer.footer-embed .footer-copy {
+    font-size: 13px;
+    color: #8e8e8e;
+    letter-spacing: 0.02em;
+  }
+</style></div></div></div><script>window.__reactRouterContext = {"basename":"/","future":{"unstable_optimizeDeps":false,"unstable_subResourceIntegrity":false,"unstable_trailingSlashAwareDataRequests":false,"unstable_previewServerPrerendering":false,"v8_middleware":false,"v8_splitRouteModules":false,"v8_viteEnvironmentApi":false},"routeDiscovery":{"mode":"lazy","manifestPath":"/__manifest"},"ssr":true,"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">;
+import * as route0 from "/assets/root-CKNBTVqL.js";
+import * as route1 from "/assets/_produkty_._investice_._index-ODusATsk.js";
+  window.__reactRouterManifest = {
+  "entry": {
+    "module": "/assets/entry.client-DAnfYBe0.js",
+    "imports": [
+      "/assets/chunk-LFPYN7LY-KO6my5NK.js"
+    ],
+    "css": []
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/root-CKNBTVqL.js",
+      "imports": [
+        "/assets/chunk-LFPYN7LY-KO6my5NK.js",
+        "/assets/_index-D4jCT0wn.js",
+        "/assets/components-BIsCsZWf.js"
+      ],
+      "css": []
+    },
+    "routes/[produkty].[investice]._index": {
+      "id": "routes/[produkty].[investice]._index",
+      "parentId": "root",
+      "path": "produkty/investice",
+      "index": true,
+      "hasAction": true,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/_produkty_._investice_._index-ODusATsk.js",
+      "imports": [
+        "/assets/chunk-LFPYN7LY-KO6my5NK.js",
+        "/assets/components-BIsCsZWf.js",
+        "/assets/index-BVj1Hbq_.js"
+      ],
+      "css": []
+    },
+    "routes/_index": {
+      "id": "routes/_index",
+      "parentId": "root",
+      "index": true,
+      "hasAction": true,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/_index-BSyzJvg_.js",
+      "imports": [
+        "/assets/chunk-LFPYN7LY-KO6my5NK.js",
+        "/assets/components-BIsCsZWf.js",
+        "/assets/_index-D4jCT0wn.js",
+        "/assets/index-BVj1Hbq_.js"
+      ],
+      "css": []
+    },
+    "routes/$": {
+      "id": "routes/$",
+      "parentId": "root",
+      "path": "*",
+      "hasAction": true,
+      "hasLoader": true,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasClientMiddleware": false,
+      "hasDefaultExport": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/_-DBa8uudx.js",
+      "imports": [
+        "/assets/chunk-LFPYN7LY-KO6my5NK.js",
+        "/assets/components-BIsCsZWf.js",
+        "/assets/index-BVj1Hbq_.js"
+      ],
+      "css": []
+    }
+  },
+  "url": "/assets/manifest-13aa9148.js",
+  "version": "13aa9148"
+};
+  window.__reactRouterRouteModules = {"root":route0,"routes/[produkty].[investice]._index":route1};
+
+import("/assets/entry.client-DAnfYBe0.js");</script><script>((storageKey2, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({ key }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey2) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey2);
+    }
+  })("react-router-scroll-positions", null)</script><!--$--><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_36\":-5,\"_37\":-5},\"loaderData\",{\"_3\":4},\"routes/[produkty].[investice]._index\",{\"_5\":6,\"_7\":8,\"_9\":10,\"_19\":20,\"_21\":22},\"host\",\"kovacsebastian.com\",\"url\",\"https://kovacsebastian.com/produkty/investice\",\"system\",{\"_11\":12,\"_13\":14,\"_15\":16,\"_17\":18},\"params\",{},\"search\",{},\"origin\",\"https://kovacsebastian.com\",\"pathname\",\"/produkty/investice\",\"resources\",{},\"pageMeta\",{\"_23\":24,\"_25\":26,\"_27\":28,\"_29\":26,\"_30\":-7,\"_31\":26,\"_32\":-7,\"_33\":26,\"_34\":35},\"title\",\"Investice\",\"description\",\"\",\"excludePageFromSearch\",false,\"language\",\"socialImageAssetName\",\"socialImageUrl\",\"status\",\"redirect\",\"custom\",[],\"actionData\",\"errors\"]\n");</script><!--$--><script>window.__reactRouterContext.streamController.close();</script><!--/$--><!--/$--><script>$RC=function(b,c,e){c=document.getElementById(c);c.parentNode.removeChild(c);var a=document.getElementById(b);if(a){b=a.previousSibling;if(e)b.data="$!",a.setAttribute("data-dgst",e);else{e=b.parentNode;a=b.nextSibling;var f=0;do{if(a&&8===a.nodeType){var d=a.data;if("/$"===d)if(0===f)break;else f--;else"$"!==d&&"$?"!==d&&"$!"!==d||f++}d=a.nextSibling;e.removeChild(a);a=d}while(a);for(;c.firstChild;)e.insertBefore(c.firstChild,a);b.data="$"}b._reactRetry&&b._reactRetry()}};$RC("B:0","S:0")</script><script>$RC("B:1","S:1")</script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/financni-diagnostika-page.css';
+import fdHtml from './_financni-diagnostika-fragment.html?raw';
+---
+<BaseLayout title="Finanční Diagnostika" currentPath="/financni-diagnostika">
+  <div id="fd-section" set:html={fdHtml} />
+</BaseLayout>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('#fd-section .t-item');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    items.forEach((el) => observer.observe(el));
+  });
+</script>
