@@ -1,0 +1,813 @@
+<!DOCTYPE html><html lang="cs"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Úvěry</title><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-MT7EY1N8GN"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MT7EY1N8GN');
+    </script><link rel="stylesheet" href="/_astro/BaseLayout.Cb8ejVxn.css"></head> <body> <nav class="nav-embed" data-astro-cid-dmqpwcec> <a href="/" class="nav-logo" aria-label="Domů" data-astro-cid-dmqpwcec> <img src="/transpfavicon.png" alt="Sebastián Kováč" data-astro-cid-dmqpwcec> </a> <div class="nav-inner" data-astro-cid-dmqpwcec> <ul class="nav-links" data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec><a href="/" class="nav-link" data-astro-cid-dmqpwcec>O Mně</a></li> <li class="nav-dropdown-wrap" data-astro-cid-dmqpwcec> <button type="button" class="nav-link nav-trigger" aria-haspopup="true" data-astro-cid-dmqpwcec> <span class="trigger-label" data-astro-cid-dmqpwcec>Finanční Kalkulačky</span> <span class="caret-wrap" aria-hidden="true" data-astro-cid-dmqpwcec> <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" data-astro-cid-dmqpwcec> <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dmqpwcec></path> </svg> </span> </button> <div class="nav-dropdown" data-astro-cid-dmqpwcec> <a href="/financne-kalkulacky/investicna-kalkulacka" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Kalkulačka Investic</a> <a href="/financne-kalkulacky/kolik-investovat-mesicne" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Měsíční Investice pro Cíl</a> <a href="/financne-kalkulacky/kalkulacka-pro-rentu" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Renta</a> <a href="/financne-kalkulacky/kalkulacka-inflace" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Kalkulačka Inflace</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/financni-diagnostika" class="nav-link" data-astro-cid-dmqpwcec>Finanční Diagnostika</a></li> <li class="nav-dropdown-wrap" data-astro-cid-dmqpwcec> <button type="button" class="nav-link nav-trigger active" aria-haspopup="true" data-astro-cid-dmqpwcec> <span class="trigger-label" data-astro-cid-dmqpwcec>Produkty</span> <span class="caret-wrap" aria-hidden="true" data-astro-cid-dmqpwcec> <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" data-astro-cid-dmqpwcec> <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dmqpwcec></path> </svg> </span> </button> <div class="nav-dropdown" data-astro-cid-dmqpwcec> <a href="/produkty/investice" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Investice</a> <a href="/produkty/penzijni-sporeni" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Penzijní Spoření</a> <a href="/produkty/uvery" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Úvěry</a> <a href="/produkty/pojisteni" class="nav-dropdown-link" data-astro-cid-dmqpwcec>Pojištění</a> </div> </li> <li data-astro-cid-dmqpwcec><a href="/zamestnanecke-benefity" class="nav-link" data-astro-cid-dmqpwcec>Zaměstnanecké Benefity</a></li> <li data-astro-cid-dmqpwcec><a href="/investovani-do-nemovitosti" class="nav-link" data-astro-cid-dmqpwcec>Investování do Nemovitostí</a></li> <li data-astro-cid-dmqpwcec><a href="/likvidace-pojistnych-udalosti" class="nav-link" data-astro-cid-dmqpwcec>Likvidace Pojistných Událostí</a></li> </ul> </div> <!-- Mobile center name — hidden on desktop --> <span class="nav-mobile-name" aria-hidden="true" data-astro-cid-dmqpwcec>Sebastián Kováč</span> <!-- Hamburger — mobile only --> <button class="nav-hamburger" id="navHamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobOverlay" data-astro-cid-dmqpwcec> <span class="ham-bar" data-astro-cid-dmqpwcec></span> <span class="ham-bar" data-astro-cid-dmqpwcec></span> <span class="ham-bar" data-astro-cid-dmqpwcec></span> </button> </nav> <!-- ─── Mobile full-screen overlay ─── --> <div class="mob-overlay" id="mobOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Hlavní navigace" data-astro-cid-dmqpwcec> <div class="mob-overlay-inner" data-astro-cid-dmqpwcec> <div class="mob-overlay-head" data-astro-cid-dmqpwcec> <a href="/" class="mob-logo" aria-label="Domů" data-astro-cid-dmqpwcec> <img src="/transpfavicon.png" alt="Sebastián Kováč" data-astro-cid-dmqpwcec> </a> <button class="mob-close" id="mobClose" aria-label="Zavřít menu" data-astro-cid-dmqpwcec> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-astro-cid-dmqpwcec> <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" data-astro-cid-dmqpwcec></path> </svg> </button> </div> <nav class="mob-nav" data-astro-cid-dmqpwcec> <ul class="mob-list" data-astro-cid-dmqpwcec> <li class="mob-item" style="--i:0" data-astro-cid-dmqpwcec> <a href="/" class="mob-link" data-astro-cid-dmqpwcec>O Mně</a> </li> <li class="mob-item mob-has-sub" style="--i:1" data-astro-cid-dmqpwcec> <button class="mob-link mob-trigger" aria-expanded="false" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec>Finanční Kalkulačky</span> <svg class="mob-caret" width="16" height="16" viewBox="0 0 24 24" fill="none" data-astro-cid-dmqpwcec> <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dmqpwcec></path> </svg> </button> <div class="mob-sub" data-astro-cid-dmqpwcec> <ul data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec><a href="/financne-kalkulacky/investicna-kalkulacka" class="mob-sub-link" data-astro-cid-dmqpwcec>Kalkulačka Investic</a></li> <li data-astro-cid-dmqpwcec><a href="/financne-kalkulacky/kolik-investovat-mesicne" class="mob-sub-link" data-astro-cid-dmqpwcec>Měsíční Investice pro Cíl</a></li> <li data-astro-cid-dmqpwcec><a href="/financne-kalkulacky/kalkulacka-pro-rentu" class="mob-sub-link" data-astro-cid-dmqpwcec>Renta</a></li> <li data-astro-cid-dmqpwcec><a href="/financne-kalkulacky/kalkulacka-inflace" class="mob-sub-link" data-astro-cid-dmqpwcec>Kalkulačka Inflace</a></li> </ul> </div> </li> <li class="mob-item" style="--i:2" data-astro-cid-dmqpwcec> <a href="/financni-diagnostika" class="mob-link" data-astro-cid-dmqpwcec>Finanční Diagnostika</a> </li> <li class="mob-item mob-has-sub" style="--i:3" data-astro-cid-dmqpwcec> <button class="mob-link mob-trigger active" aria-expanded="true" data-astro-cid-dmqpwcec> <span data-astro-cid-dmqpwcec>Produkty</span> <svg class="mob-caret" width="16" height="16" viewBox="0 0 24 24" fill="none" data-astro-cid-dmqpwcec> <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dmqpwcec></path> </svg> </button> <div class="mob-sub open" data-astro-cid-dmqpwcec> <ul data-astro-cid-dmqpwcec> <li data-astro-cid-dmqpwcec><a href="/produkty/investice" class="mob-sub-link" data-astro-cid-dmqpwcec>Investice</a></li> <li data-astro-cid-dmqpwcec><a href="/produkty/penzijni-sporeni" class="mob-sub-link" data-astro-cid-dmqpwcec>Penzijní Spoření</a></li> <li data-astro-cid-dmqpwcec><a href="/produkty/uvery" class="mob-sub-link" data-astro-cid-dmqpwcec>Úvěry</a></li> <li data-astro-cid-dmqpwcec><a href="/produkty/pojisteni" class="mob-sub-link" data-astro-cid-dmqpwcec>Pojištění</a></li> </ul> </div> </li> <li class="mob-item" style="--i:4" data-astro-cid-dmqpwcec> <a href="/zamestnanecke-benefity" class="mob-link" data-astro-cid-dmqpwcec>Zaměstnanecké Benefity</a> </li> <li class="mob-item" style="--i:5" data-astro-cid-dmqpwcec> <a href="/investovani-do-nemovitosti" class="mob-link" data-astro-cid-dmqpwcec>Investování do Nemovitostí</a> </li> <li class="mob-item" style="--i:6" data-astro-cid-dmqpwcec> <a href="/likvidace-pojistnych-udalosti" class="mob-link" data-astro-cid-dmqpwcec>Likvidace Pojistných Událostí</a> </li> </ul> </nav> <footer class="mob-footer" data-astro-cid-dmqpwcec> <a href="tel:+420771516683" class="mob-footer-link" data-astro-cid-dmqpwcec>+420 771 516 683</a> <span class="mob-footer-sep" aria-hidden="true" data-astro-cid-dmqpwcec>·</span> <a href="mailto:sebastian.kovac@smsfinance.cz" class="mob-footer-link" data-astro-cid-dmqpwcec>sebastian.kovac@smsfinance.cz</a> </footer> </div> </div>  <script type="module">(()=>{const t=document.getElementById("navHamburger"),e=document.getElementById("mobOverlay");if(!t||!e)return;function d(){e.setAttribute("aria-hidden","false"),t.setAttribute("aria-expanded","true"),t.classList.add("open"),document.body.style.overflow="hidden"}function i(){e.setAttribute("aria-hidden","true"),t.setAttribute("aria-expanded","false"),t.classList.remove("open"),document.body.style.overflow=""}t.addEventListener("click",()=>{e.getAttribute("aria-hidden")==="false"?i():d()}),document.getElementById("mobClose")?.addEventListener("click",i),document.addEventListener("keydown",n=>{n.key==="Escape"&&e.getAttribute("aria-hidden")==="false"&&i()}),e.querySelectorAll(".mob-trigger").forEach(n=>{n.addEventListener("click",()=>{const s=n.nextElementSibling;if(!s)return;const o=s.classList.contains("open");e.querySelectorAll(".mob-sub.open").forEach(a=>{a.classList.remove("open"),a.previousElementSibling?.setAttribute("aria-expanded","false")}),o||(s.classList.add("open"),n.setAttribute("aria-expanded","true"))})})})();</script> <main>  
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Úvěry — Financování s rozumem</title>
+<style>
+  :root {
+    --paper: #fdfaf7;
+    --ink: #201b17;
+    --muted: #7a6a5d;
+    --accent: #5c4a3d;
+    --accent-2: #8a7563;
+    --accent-3: #bfa792;
+    --line: rgba(92,74,61,.10);
+    --ease: cubic-bezier(.22,.61,.36,1);
+    --ease-spring: cubic-bezier(.34,1.36,.64,1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Times New Roman', Georgia, serif;
+    color: var(--ink);
+    line-height: 1.9;
+    letter-spacing: .02em;
+    overflow-x: hidden;
+    background: #f8f6f3;
+    min-height: 100vh;
+  }
+
+  /* ── Background grain ── */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");
+    background-size: 400px 400px;
+    opacity: .4;
+  }
+
+  /* ── Ambient orbs ── */
+  .orb {
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    animation: orbDrift 20s ease-in-out infinite alternate;
+  }
+  .orb-1 { width: 600px; height: 600px; top: -200px; left: -160px; background: radial-gradient(circle, rgba(138,117,99,.07) 0%, transparent 70%); animation-duration: 22s; }
+  .orb-2 { width: 500px; height: 500px; top: 30%; right: -180px; background: radial-gradient(circle, rgba(92,74,61,.05) 0%, transparent 70%); animation-duration: 18s; animation-delay: -8s; }
+  .orb-3 { width: 700px; height: 700px; bottom: -200px; left: 20%; background: radial-gradient(circle, rgba(191,167,146,.06) 0%, transparent 70%); animation-duration: 26s; animation-delay: -14s; }
+
+  /* ── Layout ── */
+  .wrap {
+    position: relative;
+    z-index: 1;
+    width: min(1160px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 32px 0 120px;
+  }
+
+  /* ── Reveal animation ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(48px);
+    transition: opacity .9s var(--ease), transform .9s var(--ease);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── Hero ── */
+  .hero {
+    text-align: center;
+    padding: 28px 0 40px;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    font-family: 'Times New Roman', Georgia, serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    margin-bottom: 20px;
+  }
+  .hero-eyebrow::before, .hero-eyebrow::after {
+    content: "";
+    width: 44px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(92,74,61,.65), transparent);
+  }
+
+  h1 {
+    font-size: clamp(42px, 5.2vw, 64px);
+    line-height: 1.1;
+    letter-spacing: .045em;
+    color: #1e1712;
+    margin-bottom: 18px;
+    font-weight: normal;
+  }
+
+  .hero-sub {
+    font-size: clamp(22px, 3vw, 32px);
+    color: var(--muted);
+    margin-bottom: 32px;
+    line-height: 1.45;
+  }
+
+  .hero-divider {
+    width: 48px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(92,74,61,.4), transparent);
+    margin: 28px auto;
+  }
+
+  .hero-points {
+    font-size: clamp(19px, 2.1vw, 23px);
+    color: var(--accent);
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .hero-point {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    transform: translateX(-16px);
+    transition: opacity .6s var(--ease), transform .6s var(--ease);
+  }
+  .hero-point.visible { opacity: 1; transform: translateX(0); }
+  .hero-point:nth-child(1) { transition-delay: .15s; }
+  .hero-point:nth-child(2) { transition-delay: .3s; }
+  .hero-point:nth-child(3) { transition-delay: .45s; }
+
+  .point-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-2);
+    flex-shrink: 0;
+  }
+
+  .scroll-hint {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  .scroll-line {
+    width: 1px;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(92,74,61,.4), rgba(92,74,61,0));
+    animation: scrollPulse 2.2s ease-in-out infinite;
+  }
+
+  /* ── Cards stack ── */
+  .stack { display: grid; gap: 28px; margin-top: 72px; }
+
+  .card {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(280px, 420px) minmax(0,1fr);
+    border-radius: 28px;
+    background: rgba(255,255,255,.28);
+    border: 1px solid rgba(255,255,255,.6);
+    box-shadow: 0 2px 0 rgba(255,255,255,.7) inset, 0 16px 48px rgba(61,44,41,.06);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+    transition: box-shadow .4s var(--ease), transform .4s var(--ease);
+    cursor: default;
+  }
+
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 60%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 2px 0 rgba(255,255,255,.7) inset, 0 24px 64px rgba(61,44,41,.10);
+    transform: translateY(-3px);
+  }
+  .card:hover::after { opacity: 1; }
+
+  /* Number badge on hover */
+  .card-num {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    font-size: 72px;
+    font-weight: bold;
+    color: rgba(92,74,61,.04);
+    letter-spacing: -.02em;
+    line-height: 1;
+    pointer-events: none;
+    transition: color .4s ease;
+    user-select: none;
+  }
+  .card:hover .card-num { color: rgba(92,74,61,.07); }
+
+  .copy {
+    position: relative;
+    z-index: 1;
+    padding: 40px 28px 40px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: clamp(26px, 2.8vw, 32px);
+    color: #2a231d;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    padding-bottom: 14px;
+    position: relative;
+  }
+  .section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    border-radius: 1px;
+    background: var(--accent);
+    transition: width .5s var(--ease);
+  }
+  .card:hover .section-title::after { width: 100%; }
+
+  .items { list-style: none; }
+  .items li {
+    font-size: clamp(18px, 1.9vw, 22px);
+    color: #3d2c29;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(92,74,61,.06);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: gap .3s var(--ease), color .3s ease;
+  }
+  .items li:last-child { border-bottom: none; }
+  .items li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent-3);
+    flex-shrink: 0;
+    transition: background .3s ease, transform .3s var(--ease-spring);
+  }
+  .card:hover .items li::before { background: var(--accent); transform: scale(1.4); }
+  .items li strong { color: var(--accent); }
+
+  /* ── Visual panel ── */
+  .visual {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+  .visual::before {
+    content: "";
+    position: absolute;
+    inset: 16px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(253,250,247,.92), rgba(242,235,226,.80));
+    border: 1px solid rgba(255,255,255,.9);
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  }
+
+  .visual svg {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 500px);
+    height: auto;
+    overflow: visible;
+  }
+
+  /* SVG element styles */
+  .bbl {
+    fill: rgba(255,255,255,.95);
+    stroke: rgba(92,74,61,.11);
+    stroke-width: 1.5;
+    transition: filter .4s ease;
+  }
+  .card:hover .bbl { filter: drop-shadow(0 6px 16px rgba(61,44,41,.09)); }
+
+  .bbl-dk {
+    fill: url(#grad-dk);
+    stroke: rgba(255,255,255,.1);
+    stroke-width: 1.5;
+  }
+
+  .ln {
+    fill: none;
+    stroke: rgba(92,74,61,.18);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 3 10;
+    animation: dashFlow 20s linear infinite;
+  }
+  .ln-bg {
+    fill: none;
+    stroke: rgba(138,117,99,.07);
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 4 18;
+    filter: blur(1px);
+    animation: dashFlow 26s linear infinite reverse;
+  }
+
+  .t-dk  { font-size: 16px; fill: #5c4a3d; font-weight: 700; letter-spacing: .01em; }
+  .t-sub { font-size: 14px; fill: #7a6a5d; font-weight: 600; }
+  .t-lt  { font-size: 16px; fill: #fff; font-weight: 700; letter-spacing: .01em; }
+  .t-lts { font-size: 14px; fill: rgba(255,255,255,.88); font-weight: 600; }
+  .t-chip{ font-size: 12px; fill: #7a6a5d; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+
+  .chip {
+    fill: rgba(255,255,255,.82);
+    stroke: rgba(92,74,61,.09);
+    stroke-width: 1;
+  }
+
+  .icon-s {
+    fill: none;
+    stroke: rgba(92,74,61,.38);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .icon-lt {
+    fill: none;
+    stroke: rgba(255,255,255,.85);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ── Arrow animation on consolidation ── */
+  .arrow-pulse {
+    fill: none;
+    stroke: rgba(92,74,61,.28);
+    stroke-width: 2;
+    stroke-linecap: round;
+    animation: arrowPulse 2.4s ease-in-out infinite;
+  }
+
+  /* ── Outro card ── */
+  .outro {
+    position: relative;
+    margin-top: 24px;
+    padding: 52px 40px 44px;
+    background: rgba(255,255,255,.24);
+    border: 1px solid rgba(255,255,255,.6);
+    border-left: 4px solid var(--accent);
+    border-radius: 28px;
+    box-shadow: 0 2px 0 rgba(255,255,255,.6) inset, 0 20px 56px rgba(61,44,41,.07);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+  .outro::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, rgba(255,255,255,.14) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .outro-title {
+    position: relative;
+    z-index: 1;
+    font-size: clamp(32px, 3.4vw, 44px);
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 36px;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+
+  .outro-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+
+  .outro-point {
+    padding: 22px 20px 22px 44px;
+    border-radius: 20px;
+    font-size: clamp(17px, 1.8vw, 21px);
+    line-height: 1.65;
+    background: rgba(255,255,255,.44);
+    border: 1px solid rgba(92,74,61,.07);
+    position: relative;
+    transition: background .3s ease, transform .3s var(--ease);
+  }
+  .outro-point:hover { background: rgba(255,255,255,.68); transform: translateY(-2px); }
+  .outro-point::before {
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 26px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent-2);
+    box-shadow: 0 0 0 8px rgba(138,117,99,.08);
+    transition: box-shadow .3s ease;
+  }
+  .outro-point:hover::before { box-shadow: 0 0 0 10px rgba(138,117,99,.13); }
+
+  .outro-final {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: clamp(22px, 2.4vw, 28px);
+    font-weight: 700;
+    color: var(--accent-2);
+    line-height: 1.5;
+    padding-top: 28px;
+    border-top: 1px solid rgba(92,74,61,.08);
+  }
+
+  /* ── Ticker strip ── */
+  .ticker-wrap {
+    overflow: hidden;
+    margin: 64px 0 0;
+    padding: 18px 0;
+    border-top: 1px solid rgba(92,74,61,.07);
+    border-bottom: 1px solid rgba(92,74,61,.07);
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .ticker {
+    display: flex;
+    gap: 64px;
+    width: max-content;
+    animation: ticker 60s linear infinite;
+  }
+  .ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    white-space: nowrap;
+  }
+  .ticker-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent-3);
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .card { grid-template-columns: 1fr; }
+    .copy { padding: 32px 24px 16px; }
+    .visual { min-height: 260px; }
+    .outro-grid { grid-template-columns: 1fr; }
+    .wrap { width: calc(100% - 24px); padding: 36px 0 80px; }
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 44px; }
+    .hero-sub { font-size: 20px; }
+    .card { border-radius: 22px; }
+    .outro { padding: 34px 22px 30px; border-radius: 22px; }
+    .outro-point { font-size: 17px; padding: 18px 16px 18px 40px; }
+    .copy { padding: 24px 18px 10px; }
+    .visual { min-height: 200px; padding: 14px; }
+    .visual::before { inset: 10px; border-radius: 16px; }
+    .ticker-wrap { margin-top: 40px; }
+  }
+
+  /* ── Keyframes ── */
+  @keyframes orbDrift {
+    from { transform: translate(0,0) scale(1); }
+    to   { transform: translate(18px, -14px) scale(1.04); }
+  }
+  @keyframes dashFlow {
+    from { stroke-dashoffset: 0; }
+    to   { stroke-dashoffset: -280; }
+  }
+  @keyframes scrollPulse {
+    0%,100% { transform: scaleY(1); opacity: .6; }
+    50%      { transform: scaleY(.7); opacity: 1; }
+  }
+  @keyframes arrowPulse {
+    0%,100% { opacity: .3; transform: translateX(0); }
+    50%      { opacity: .8; transform: translateX(4px); }
+  }
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  @keyframes countUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal, .hero-point { opacity: 1 !important; transform: none !important; }
+  }
+</style>
+
+
+
+<div class="orb orb-1" aria-hidden="true"></div>
+<div class="orb orb-2" aria-hidden="true"></div>
+<div class="orb orb-3" aria-hidden="true"></div>
+
+<div class="wrap">
+
+  <!-- ── Hero ── -->
+  <section class="hero reveal" id="hero">
+    <div class="hero-eyebrow">Financování s rozumem</div>
+    <h1>Úvěry</h1>
+    <p class="hero-sub">Správný dluh buduje majetek.<br>Špatný ho ničí.</p>
+    <div class="hero-divider"></div>
+    <div style="font-size: clamp(18px,2vw,22px); color: var(--muted); margin-bottom: 20px;">Pomáhám klientům rozlišit</div>
+    <div class="hero-points">
+      <div class="hero-point"><span class="point-dot"></span>co je <strong>produktivní dluh</strong></div>
+      <div class="hero-point"><span class="point-dot"></span>co je <strong>zbytečně drahé financování</strong></div>
+      <div class="hero-point"><span class="point-dot"></span>kde úvěr dává smysl jako <strong>nástroj růstu</strong></div>
+    </div>
+  </section>
+
+  <!-- ── Ticker ── -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <span class="ticker-item"><span class="ticker-dot"></span>Konsolidace úvěrů</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Hypoteční financování</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Refinancování</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Investiční nemovitosti</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Zdravý dluh</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Optimalizace cash-flow</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Konsolidace úvěrů</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Hypoteční financování</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Refinancování</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Investiční nemovitosti</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Zdravý dluh</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Optimalizace cash-flow</span>
+    </div>
+  </div>
+
+  <!-- ── Cards ── -->
+  <div class="stack">
+
+    <!-- 1. Konsolidace -->
+    <article class="card reveal">
+      <span class="card-num" aria-hidden="true">01</span>
+      <div class="copy">
+        <h2 class="section-title">Konsolidace nevýhodných úvěrů</h2>
+        <ul class="items">
+          <li>Sloučení spotřebitelských úvěrů</li>
+          <li>Snížení úroků</li>
+          <li>Optimalizace splátky</li>
+          <li>Vyčištění cash-flow</li>
+        </ul>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 520 320" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="grad-dk" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#5c4a3d"></stop>
+              <stop offset="100%" stop-color="#8a7563"></stop>
+            </linearGradient>
+          </defs>
+
+          <path class="ln-bg" d="M106 82 C 170 82, 210 118, 268 155"></path>
+          <path class="ln-bg" d="M106 160 C 170 160, 210 160, 268 162"></path>
+          <path class="ln-bg" d="M106 238 C 170 238, 210 202, 268 169"></path>
+          <path class="ln" d="M106 82 C 170 82, 210 118, 268 155"></path>
+          <path class="ln" d="M106 160 C 170 160, 210 160, 162"></path>
+          <path class="ln" d="M106 238 C 170 238, 210 202, 268 169"></path>
+
+          <!-- Arrow -->
+          <path class="arrow-pulse" d="M248 155 L264 162 M248 169 L264 162"></path>
+
+          <!-- Source bubbles -->
+          <circle class="bbl" cx="84" cy="82" r="52"></circle>
+          <text class="t-dk" x="84" y="74" text-anchor="middle">9,59 %</text>
+          <text class="t-sub" x="84" y="94" text-anchor="middle">300 000 Kč</text>
+
+          <circle class="bbl" cx="84" cy="160" r="52"></circle>
+          <text class="t-dk" x="84" y="152" text-anchor="middle">12,3 %</text>
+          <text class="t-sub" x="84" y="172" text-anchor="middle">50 000 Kč</text>
+
+          <circle class="bbl" cx="84" cy="238" r="52"></circle>
+          <text class="t-dk" x="84" y="230" text-anchor="middle">8 %</text>
+          <text class="t-sub" x="84" y="250" text-anchor="middle">220 000 Kč</text>
+
+          <!-- Result bubble -->
+          <circle class="bbl-dk" cx="374" cy="160" r="90"></circle>
+          <text class="t-lt" x="374" y="144" text-anchor="middle">4,99 %</text>
+          <text class="t-lts" x="374" y="168" text-anchor="middle">570 000 Kč</text>
+          <text class="t-lts" x="374" y="190" text-anchor="middle">1 splátka</text>
+        </svg>
+      </div>
+    </article>
+
+    <!-- 2. Hypotéka -->
+    <article class="card reveal">
+      <span class="card-num" aria-hidden="true">02</span>
+      <div class="copy">
+        <h2 class="section-title">Nové hypoteční úvěry</h2>
+        <ul class="items">
+          <li>Financování vlastního bydlení</li>
+          <li>Správné nastavení fixace a splatnosti</li>
+          <li>Práce s LTV a vlastními zdroji</li>
+          <li>Kombinace se stavebním spořením</li>
+        </ul>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 520 320" preserveAspectRatio="xMidYMid meet">
+          <path class="ln-bg" d="M100 180 C 170 100, 250 78, 330 110 S 450 190, 462 248"></path>
+          <path class="ln" d="M100 180 C 170 100, 250 78, 330 110 S 450 190, 462 248"></path>
+
+          <circle class="bbl-dk" cx="272" cy="160" r="104"></circle>
+          <!-- House icon -->
+          <path class="icon-lt" d="M218 166 L272 116 L326 166"></path>
+          <path class="icon-lt" d="M232 162 V218 H312 V162"></path>
+          <path class="icon-lt" d="M262 218 V184 H282 V218"></path>
+
+          <text class="t-lt" x="272" y="82" text-anchor="middle">4,69 %</text>
+          <text class="t-lts" x="272" y="245" text-anchor="middle">12 000 000 Kč</text>
+
+          <!-- Chips -->
+          <rect class="chip" x="34" y="180" rx="16" width="90" height="30"></rect>
+          <text class="t-chip" x="80" y="200" text-anchor="middle">fixace</text>
+
+          <rect class="chip" x="420" y="240" rx="16" width="80" height="30"></rect>
+          <text class="t-chip" x="460" y="260" text-anchor="middle">LTV</text>
+        </svg>
+      </div>
+    </article>
+
+    <!-- 3. Refinancování -->
+    <article class="card reveal">
+      <span class="card-num" aria-hidden="true">03</span>
+      <div class="copy">
+        <h2 class="section-title">Refinancování</h2>
+        <ul class="items">
+          <li>Snížení úrokové sazby</li>
+          <li>Úprava splátky</li>
+          <li>Uvolnění kapitálu</li>
+        </ul>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 520 320" preserveAspectRatio="xMidYMid meet">
+          <path class="ln-bg" d="M158 160 H368"></path>
+          <path class="ln" d="M158 160 H368"></path>
+          <path class="arrow-pulse" d="M230 148 L252 160 L230 172"></path>
+
+          <circle class="bbl" cx="118" cy="160" r="66"></circle>
+          <text class="t-dk" x="118" y="150" text-anchor="middle">6,29 %</text>
+          <text class="t-sub" x="118" y="172" text-anchor="middle">původně</text>
+
+          <circle class="bbl-dk" cx="420" cy="160" r="78"></circle>
+          <text class="t-lt" x="420" y="147" text-anchor="middle">4,89 %</text>
+          <text class="t-lts" x="420" y="169" text-anchor="middle">nově</text>
+          <text class="t-lts" x="420" y="190" text-anchor="middle">nižší splátka</text>
+        </svg>
+      </div>
+    </article>
+
+    <!-- 4. Investiční -->
+    <article class="card reveal">
+      <span class="card-num" aria-hidden="true">04</span>
+      <div class="copy">
+        <h2 class="section-title">Investiční financování nemovitostí</h2>
+        <ul class="items">
+          <li>Nastavení investiční hypotéky</li>
+          <li>Práce se <strong>zdravým dluhem</strong></li>
+          <li>Rozjezd investičního „kolečka"</li>
+          <li>Kombinace s nezajištěnými úvěry</li>
+        </ul>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 520 320" preserveAspectRatio="xMidYMid meet">
+          <path class="ln-bg" d="M90 222 C 155 155, 218 135, 290 162 S 405 240, 468 126"></path>
+          <path class="ln" d="M90 222 C 155 155, 218 135, 290 162 S 405 240, 468 126"></path>
+
+          <!-- House 1 -->
+          <circle class="bbl" cx="112" cy="222" r="40"></circle>
+          <path class="icon-s" d="M91 224 L112 206 L133 224"></path>
+          <path class="icon-s" d="M97 222 V238 H127 V222"></path>
+
+          <!-- Cash flow bubble -->
+          <circle class="bbl" cx="286" cy="170" r="50"></circle>
+          <text class="t-dk" x="286" y="160" text-anchor="middle">nájem</text>
+          <text class="t-sub" x="286" y="182" text-anchor="middle">cash-flow</text>
+
+          <!-- Next property -->
+          <circle class="bbl-dk" cx="464" cy="126" r="54"></circle>
+          <text class="t-lt" x="464" y="116" text-anchor="middle">další</text>
+          <text class="t-lts" x="464" y="138" text-anchor="middle">nemovitost</text>
+
+          <!-- Chip -->
+          <rect class="chip" x="348" y="238" rx="16" width="120" height="28"></rect>
+          <text class="t-chip" x="408" y="256" text-anchor="middle">zdravý dluh</text>
+        </svg>
+      </div>
+    </article>
+
+    <!-- ── Outro ── -->
+    <section class="outro reveal">
+      <h2 class="outro-title">Jak přistupuji k financování</h2>
+      <div class="outro-grid">
+        <div class="outro-point">Vyjednávám nejlepší podmínky napříč trhem, aby každý úvěr byl optimalizovaný.</div>
+        <div class="outro-point">Sleduji dynamiku úroků, legislativu a tržní trendy, aby klient vždy věděl, kde stojí.</div>
+        <div class="outro-point">Nastavuji financování podle individuálního rizikového profilu a cílů klienta.</div>
+        <div class="outro-point">Plánuji dopředu: refinancování, předčasné splacení a budoucí flexibilitu.</div>
+      </div>
+      <p class="outro-final">„Každý úvěr má pracovat pro klienta, ne klient pro úvěr."</p>
+    </section>
+
+  </div><!-- /stack -->
+</div><!-- /wrap -->
+
+<script>
+(function() {
+  const mm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (mm.matches) return;
+
+  // Intersection reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Hero points stagger (triggered when hero reveals)
+  const heroIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        document.querySelectorAll('.hero-point').forEach(p => p.classList.add('visible'));
+        heroIO.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  const hero = document.querySelector('.hero');
+  if (hero) heroIO.observe(hero);
+
+  // Subtle parallax on ambient orbs
+  let raf;
+  window.addEventListener('mousemove', (e) => {
+    if (raf) cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => {
+      const x = (e.clientX / window.innerWidth - 0.5);
+      const y = (e.clientY / window.innerHeight - 0.5);
+      document.querySelectorAll('.orb').forEach((orb, i) => {
+        const d = (i + 1) * 6;
+        orb.style.transform = `translate(${x * d}px, ${y * d}px) scale(1.02)`;
+      });
+    });
+  }, { passive: true });
+
+  // Counter animation on numbers in SVG when card enters view
+  const numIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.t-dk, .t-lt').forEach(t => {
+          t.style.animation = 'countUp .5s ease both';
+        });
+        numIO.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('.card').forEach(c => numIO.observe(c));
+})();
+</script>
+  </main> <footer class="footer-embed" data-astro-cid-sz7xmlte> <div class="footer-inner" data-astro-cid-sz7xmlte> <div class="footer-row" data-astro-cid-sz7xmlte> <div class="footer-main" data-astro-cid-sz7xmlte> <a href="/" class="footer-logo-link" aria-label="Domů" data-astro-cid-sz7xmlte> <img src="/transpfavicon.png" alt="Sebastián Kováč" class="footer-logo" data-astro-cid-sz7xmlte> </a> <div class="footer-name" data-astro-cid-sz7xmlte>Sebastián Kováč</div> <div class="footer-tagline" data-astro-cid-sz7xmlte>Finanční poradenství a investice</div> <div class="footer-contact" data-astro-cid-sz7xmlte> <a href="tel:+420771516683" class="footer-contact-link" data-astro-cid-sz7xmlte>+420 771 516 683</a> <a href="mailto:sebastian.kovac@smsfinance.cz" class="footer-contact-link" data-astro-cid-sz7xmlte>sebastian.kovac@smsfinance.cz</a> <a href="https://www.linkedin.com/in/sebasti%C3%A1n-kov%C3%A1%C4%8D-pfp" class="footer-contact-link" target="_blank" rel="noopener noreferrer" data-astro-cid-sz7xmlte>LinkedIn</a> </div> </div> <div class="footer-map-wrap" data-astro-cid-sz7xmlte> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d652.0728525897156!2d16.605030069661147!3d49.17605667494077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129507feac52ad%3A0x5b858fd3dbffa63!2sPra%C5%BE%C3%A1kova%201008%2F69%2C%20639%2000%20Brno-jih%2C%20Czechia!5e0!3m2!1sen!2ses!4v1772108890025!5m2!1sen!2ses" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - Pražákova 1008/69, Brno" data-astro-cid-sz7xmlte></iframe> </div> <nav class="footer-links" data-astro-cid-sz7xmlte> <a href="/" class="footer-link" data-astro-cid-sz7xmlte>O Mně</a> <a href="/financne-kalkulacky/investicna-kalkulacka" class="footer-link" data-astro-cid-sz7xmlte>Finanční Kalkulačky</a> <a href="/financni-diagnostika" class="footer-link" data-astro-cid-sz7xmlte>Finanční Diagnostika</a> <a href="/produkty/investice" class="footer-link" data-astro-cid-sz7xmlte>Produkty</a> <a href="/zamestnanecke-benefity" class="footer-link" data-astro-cid-sz7xmlte>Zaměstnanecké Benefity</a> <a href="/investovani-do-nemovitosti" class="footer-link" data-astro-cid-sz7xmlte>Investování do Nemovitostí</a> <a href="/likvidace-pojistnych-udalosti" class="footer-link" data-astro-cid-sz7xmlte>Likvidace Pojistných Událostí</a> </nav> </div> <div class="footer-bottom" data-astro-cid-sz7xmlte> <div class="footer-copy" data-astro-cid-sz7xmlte>© <span id="footer-year" data-astro-cid-sz7xmlte></span> Sebastián Kováč</div> </div> </div> </footer> <script type="module">(function(){var e=document.getElementById("footer-year");e&&(e.textContent=String(new Date().getFullYear()))})();</script> </body></html>
